@@ -1,0 +1,78 @@
+/* ===== FORCE DARK BACKGROUND ===== */
+body {
+  background: #0f0f0f !important;
+  color: #e0e0e0 !important;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #1a1a2e !important;
+  border-bottom: 2px solid #e94560 !important;
+}
+
+/* ===== LOGO ===== */
+.logo a {
+  color: #e94560 !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+  color: #e94560 !important;
+}
+
+/* ===== POST TITLE ON HOME ===== */
+.post-entry .entry-title a {
+  color: #e94560 !important;
+}
+
+.post-entry .entry-title a:hover {
+  color: #ff6b6b !important;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #e94560 !important;
+}
+
+a:hover {
+  color: #ff6b6b !important;
+}
+
+/* ===== BLOG CARDS ===== */
+.post-entry {
+  background: #16213e !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  margin-bottom: 20px !important;
+  border: 1px solid #e9456033 !important;
+  transition: transform 0.2s !important;
+}
+
+.post-entry:hover {
+  transform: translateY(-4px) !important;
+  border-color: #e94560 !important;
+}
+
+/* ===== BLOG POST CONTENT ===== */
+.post-content {
+  line-height: 1.9 !important;
+  font-size: 1.05rem !important;
+}
+
+/* ===== MENU LINKS ===== */
+.menu a {
+  color: #e0e0e0 !important;
+}
+
+.menu a:hover {
+  color: #e94560 !important;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #1a1a2e !important;
+  color: #888 !important;
+  border-top: 1px solid #e94560 !important;
+}
