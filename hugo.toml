@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313"
+baseURL = "https://myblog.cinechillz01.workers.dev"
 locale = "en-us"
 title = "IntimateGuide"
 theme = "PaperMod"
