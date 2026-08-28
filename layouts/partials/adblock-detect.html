@@ -1,0 +1,66 @@
+<div id="adblock-message" style="
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #e94560;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  z-index: 9999;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+">
+  🙏 Our site is completely free — ads are our only income. |
+  Hamari site free hai — ads hi humari income hai.
+  <br style="display:none;" id="msg-break">
+  <span style="font-weight:400; font-size:0.85rem; opacity:0.9;">
+    Please disable AdBlock / AdGuard to support us &nbsp;|&nbsp; 
+    Support ke liye AdBlock disable karein
+  </span>
+  &nbsp;&nbsp;
+  <span 
+    onclick="document.getElementById('adblock-message').style.display='none'" 
+    style="
+      cursor:pointer;
+      background:white;
+      color:#e94560;
+      padding:4px 12px;
+      border-radius:4px;
+      font-size:0.85rem;
+      margin-left:10px;
+      display:inline-block;
+      vertical-align:middle;
+    ">
+    ✕ Close
+  </span>
+</div>
+
+<script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var testAd = document.createElement('div');
+    testAd.innerHTML = '&nbsp;';
+    testAd.className = 'adsbox ad-block-test pub_300x250 pub_300x250m';
+    testAd.style.cssText = 'width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;';
+    document.body.appendChild(testAd);
+
+    setTimeout(function() {
+      if (
+        testAd.offsetHeight === 0 ||
+        testAd.offsetWidth === 0 ||
+        testAd.offsetParent === null ||
+        window.getComputedStyle(testAd).display === 'none' ||
+        window.getComputedStyle(testAd).visibility === 'hidden'
+      ) {
+        document.getElementById('adblock-message').style.display = 'block';
+      }
+      if (document.body.contains(testAd)) {
+        document.body.removeChild(testAd);
+      }
+    }, 200);
+  }, 1500);
+});
+</script>
