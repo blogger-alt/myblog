@@ -1,0 +1,78 @@
+<div id="content-lock" style="display:none;">
+  <div style="
+    background: #1a1a2e;
+    border: 2px solid #e94560;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+  ">
+    <p style="color:#e94560; font-size:1.5rem; font-weight:700;">
+      🔒 Content Locked / Content Lock Hai
+    </p>
+    <p style="color:#e0e0e0; margin: 15px 0; font-size:1rem; line-height:1.7;">
+      Our site is completely free — ads are our only income.<br>
+      <span style="color:#aaa;">Hamari site bilkul free hai — ads hi humari income hai.</span>
+    </p>
+    <p style="color:#e0e0e0; margin: 15px 0; font-size:1rem; line-height:1.7;">
+      Please disable AdBlock / AdGuard and refresh the page.<br>
+      <span style="color:#aaa;">AdBlock disable karein aur page refresh karein.</span>
+    </p>
+    <p style="
+      color:#888;
+      font-size:0.85rem;
+      background:#0f0f0f;
+      padding:10px;
+      border-radius:8px;
+      margin-top:15px;
+    ">
+      📱 AdGuard DNS users:<br>
+      AdGuard App → Settings → DNS → Disable<br>
+      <span style="color:#666;">Ya boldblog.in ko whitelist mein add karein</span>
+    </p>
+    <button onclick="window.location.reload()" style="
+      background:#e94560;
+      color:white;
+      border:none;
+      padding:12px 30px;
+      border-radius:8px;
+      font-size:1rem;
+      font-weight:700;
+      cursor:pointer;
+      margin-top:15px;
+    ">
+      🔄 Refresh Page / Page Refresh Karein
+    </button>
+  </div>
+</div>
+
+<script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var testAd = document.createElement('div');
+    testAd.className = 'ad-test adsbox pub_300x250 pub_300x250m';
+    testAd.style.cssText = 'width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;';
+    document.body.appendChild(testAd);
+
+    setTimeout(function() {
+      if (
+        testAd.offsetHeight === 0 ||
+        testAd.offsetWidth === 0 ||
+        testAd.offsetParent === null ||
+        window.getComputedStyle(testAd).display === 'none' ||
+        window.getComputedStyle(testAd).visibility === 'hidden'
+      ) {
+        document.getElementById('content-lock').style.display = 'block';
+        // Scroll to content lock so user sees it
+        document.getElementById('content-lock').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }
+      if (document.body.contains(testAd)) {
+        document.body.removeChild(testAd);
+      }
+    }, 200);
+  }, 1500);
+});
+</script>

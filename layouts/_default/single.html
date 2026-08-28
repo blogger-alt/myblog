@@ -19,6 +19,9 @@
     {{ .Content }}
   </div>
 
+  <!-- CONTENT LOCK — Shows when AdBlock detected -->
+  {{ partial "content-lock.html" . }}
+
   <!-- BOTTOM BANNER -->
   <div class="mtag-box-big">
     <p class="mtag-title">🔥 Aur Bhi Interesting Content</p>
@@ -32,6 +35,9 @@
       💘 Dating Secrets Jo Koi Nahi Batata — Padein
     </a>
   </div>
+
+  <!-- ADBLOCK DETECTION BANNER -->
+  {{ partial "adblock-detect.html" . }}
 
 </article>
 {{ end }}
