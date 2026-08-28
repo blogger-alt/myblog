@@ -1,0 +1,157 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-meta">
+      {{ .Date.Format "January 2, 2006" }}
+    </div>
+  </header>
+
+  <!-- TOP BANNER — Auto on every post -->
+  <div style="
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border: 1px solid #e94560;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+  ">
+    <p style="color: #e94560; font-weight:700; margin-bottom:10px;">
+      🔥 Trending Abhi India Mein
+    </p>
+    <a href="https://omg10.com/4/11656093" target="_blank" style="
+      display:inline-block; background:#e94560; color:white;
+      padding:8px 16px; border-radius:6px; text-decoration:none;
+      margin:4px; font-size:0.9rem; font-weight:600;">
+      👉 Hot Content Dekhein
+    </a>
+    <a href="https://omg10.com/4/11656173" target="_blank" style="
+      display:inline-block; background:#e94560; color:white;
+      padding:8px 16px; border-radius:6px; text-decoration:none;
+      margin:4px; font-size:0.9rem; font-weight:600;">
+      🔥 Web Series 2026
+    </a>
+    <a href="https://omg10.com/4/11672132" target="_blank" style="
+      display:inline-block; background:#e94560; color:white;
+      padding:8px 16px; border-radius:6px; text-decoration:none;
+      margin:4px; font-size:0.9rem; font-weight:600;">
+      💥 Dating Tips
+    </a>
+  </div>
+
+  <!-- BLOG CONTENT — Auto split with mid banner -->
+  <div class="post-content">
+
+    <!-- FIRST HALF OF CONTENT -->
+    {{ $content := .Content }}
+    {{ $parts := split $content "<h2" }}
+    
+    {{ range $index, $part := $parts }}
+      {{ if eq $index 0 }}
+        <!-- Intro content -->
+        {{ $part | safeHTML }}
+      {{ else if eq $index 2 }}
+        <!-- After 2nd H2 — inject mid banner -->
+        <h2{{ $part | safeHTML }}
+
+        <!-- MID BANNER 1 — Auto injected -->
+        <div style="
+          background: linear-gradient(135deg, #1a1a2e, #16213e);
+          border-left: 4px solid #e94560;
+          border-radius: 8px;
+          padding: 15px 20px;
+          margin: 25px 0;
+        ">
+          <p style="color:#e94560; font-weight:700; margin:0 0 10px 0;">
+            💥 Must See — Abhi Trending
+          </p>
+          <a href="https://omg10.com/4/11656093" target="_blank"
+             style="color:#ff6b6b; font-weight:600; text-decoration:none; display:block; margin-bottom:6px;">
+            👉 India Ka Best Hot Content 2026 — Yahan Dekhein
+          </a>
+          <a href="https://omg10.com/4/11656173" target="_blank"
+             style="color:#ff6b6b; font-weight:600; text-decoration:none; display:block; margin-bottom:6px;">
+            🔥 Best Adult Web Series — Free Mein
+          </a>
+          <a href="https://omg10.com/4/11672132" target="_blank"
+             style="color:#ff6b6b; font-weight:600; text-decoration:none; display:block;">
+            💘 Dating Secrets India — Exclusive Guide
+          </a>
+        </div>
+
+      {{ else if eq $index 4 }}
+        <!-- After 4th H2 — inject second mid banner -->
+        <h2{{ $part | safeHTML }}
+
+        <!-- MID BANNER 2 — Auto injected -->
+        <div style="
+          background: #16213e;
+          border: 1px solid #e9456066;
+          border-radius: 8px;
+          padding: 15px 20px;
+          margin: 25px 0;
+          text-align: center;
+        ">
+          <p style="color:#e94560; font-weight:700; margin:0 0 12px 0;">
+            🎬 Yeh Bhi Padein
+          </p>
+          <a href="https://omg10.com/4/11656173" target="_blank" style="
+            display:inline-block; background:#e94560; color:white;
+            padding:10px 20px; border-radius:6px; text-decoration:none;
+            font-weight:600; margin:4px;">
+            Hot Web Series 2026 →
+          </a>
+          <a href="https://omg10.com/4/11672132" target="_blank" style="
+            display:inline-block; background:#e94560; color:white;
+            padding:10px 20px; border-radius:6px; text-decoration:none;
+            font-weight:600; margin:4px;">
+            Dating Tips →
+          </a>
+        </div>
+
+      {{ else }}
+        <h2{{ $part | safeHTML }}
+      {{ end }}
+    {{ end }}
+
+  </div>
+
+  <!-- BOTTOM BANNER — Auto on every post -->
+  <div style="
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border: 2px solid #e94560;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 40px 0;
+    text-align: center;
+  ">
+    <p style="color:#e94560; font-size:1.3rem; font-weight:700; margin-bottom:15px;">
+      🔥 Aur Bhi Interesting Content — Sirf Aapke Liye
+    </p>
+
+    <a href="https://omg10.com/4/11656093" target="_blank" style="
+      display:block; background:#e94560; color:white;
+      padding:14px; border-radius:8px; text-decoration:none;
+      margin-bottom:10px; font-weight:700; font-size:1rem;">
+      👉 India Ki #1 Hot Content — Abhi Check Karein 🔥
+    </a>
+
+    <a href="https://omg10.com/4/11656173" target="_blank" style="
+      display:block; background:#16213e; color:#e94560;
+      border: 1px solid #e94560;
+      padding:14px; border-radius:8px; text-decoration:none;
+      margin-bottom:10px; font-weight:700; font-size:1rem;">
+      🎬 Best Adult Web Series 2026 — Free Dekhein
+    </a>
+
+    <a href="https://omg10.com/4/11672132" target="_blank" style="
+      display:block; background:#16213e; color:#e94560;
+      border: 1px solid #e94560;
+      padding:14px; border-radius:8px; text-decoration:none;
+      font-weight:700; font-size:1rem;">
+      💘 Dating Secrets Jo Koi Nahi Batata — Padein
+    </a>
+  </div>
+
+</article>
+{{ end }}
