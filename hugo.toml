@@ -1,6 +1,6 @@
 baseURL = "https://boldblog.in"
 locale = "en-us"
-title = "IntimateGuide"
+title = "BoldBlog"
 theme = "PaperMod"
 
 [pagination]
@@ -15,8 +15,8 @@ theme = "PaperMod"
   customCSS = ["css/custom.css"]
 
 [params.homeInfoParams]
-  Title = "Welcome to IntimateGuide"
-  Content = "Honest dating and relationship advice for Indians"
+  Title = "Welcome to BoldBlog"
+  Content = "India ka #1 Bold Dating aur Relationship Guide"
 
 [[menus.main]]
   name = "Dating Apps"
