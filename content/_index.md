@@ -1,5 +1,5 @@
 ---
-title: "IntimateGuide"
+title: "BoldBlog"
 date: 2026-08-27
 draft: false
 ---

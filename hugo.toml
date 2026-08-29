@@ -1,5 +1,5 @@
 baseURL = "https://boldblog.in"
-locale = "en-IN"
+defaultContentLanguage = "en"
 title = "BoldBlog"
 theme = "PaperMod"
 
