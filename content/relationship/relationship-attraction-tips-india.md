@@ -6,6 +6,7 @@ description: "Relationship aur attraction ke baare mein complete guide. Kisi ko 
 keywords: ["attraction tips india", "relationship tips hindi", "psychology of attraction", "how to impress a girl india", "signs someone likes you"]
 categories: ["Relationship"]
 tags: ["attraction", "relationship", "psychology", "dating tips", "india"]
+summary: "Attraction aur relationship ki psychology. Kisi ko attract kaise karein, signs ki koi aapko like karta hai aur India mein dating tips."
 ---
 
 ## Relationship aur Attraction — Psychology Ki Poori Guide

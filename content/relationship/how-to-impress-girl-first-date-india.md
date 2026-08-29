@@ -6,6 +6,7 @@ description: "How to impress a girl on first date India — complete guide. Kya 
 keywords: ["how to impress a girl on first date india", "first date tips india", "impress girl first date", "first date ideas india", "first date tips for boys india"]
 categories: ["Relationship"]
 tags: ["first date", "dating tips", "impress girl", "india", "relationship"]
+summary: "First date par girl ko impress kaise karein — kya pehno, kya bolo, kahan jaao aur kya galtiyan avoid karein — complete India guide."
 ---
 
 ## How to Impress a Girl on First Date India — Complete Guide 2026

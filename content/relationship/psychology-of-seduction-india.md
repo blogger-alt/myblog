@@ -6,6 +6,7 @@ description: "Psychology of seduction India — science-backed guide. Attraction
 keywords: ["psychology of seduction india", "seduction tips india", "how to seduce someone india", "attraction psychology india", "how to be attractive india"]
 categories: ["Relationship"]
 tags: ["psychology", "seduction", "attraction", "india", "dating"]
+summary: "Psychology of seduction India — science-backed guide jo aapko genuinely attractive banata hai. Proven principles jo actually kaam karte hain."
 ---
 
 ## Psychology of Seduction India 2026 — Complete Science-Backed Guide

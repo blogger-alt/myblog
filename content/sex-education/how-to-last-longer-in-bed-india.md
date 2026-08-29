@@ -6,6 +6,7 @@ description: "How to last longer in bed — complete science-backed guide for In
 keywords: ["how to last longer in bed india", "last longer in bed tips", "premature ejaculation india", "delay techniques men india", "sexual stamina india"]
 categories: ["Sex Education"]
 tags: ["sexual health", "men health", "stamina", "india", "sex education"]
+summary: "Science-backed guide — how to last longer in bed. Proven techniques, exercises aur products jo actually kaam karte hain Indian men ke liye."
 ---
 
 ## How to Last Longer in Bed — Complete Guide 2026
