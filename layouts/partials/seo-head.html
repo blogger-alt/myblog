@@ -1,0 +1,160 @@
+{{/* Enhanced SEO, AEO, GEO Meta Tags for BoldBlog */}}
+
+{{/* Basic Meta */}}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+{{/* Primary SEO */}}
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ end }}">
+<meta name="author" content="BoldBlog Team">
+<meta name="language" content="Hinglish, English, Hindi">
+<meta name="revisit-after" content="3 days">
+<meta name="rating" content="adult">
+<meta name="category" content="Dating, Relationships, Adult Education">
+
+{{/* Canonical */}}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Open Graph — Facebook, WhatsApp */}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="BoldBlog India">
+<meta property="og:locale" content="en_IN">
+{{ if .IsPage }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:author" content="BoldBlog Team">
+{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{ end }}
+
+{{/* Twitter/X Card */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:site" content="@boldblogin">
+
+{{/* GEO Tags — Location targeting */}}
+<meta name="geo.region" content="IN">
+<meta name="geo.country" content="India">
+<meta name="ICBM" content="20.5937, 78.9629">
+<meta name="DC.language" content="en-IN">
+
+{{/* AEO — Answer Engine Optimization */}}
+<meta name="speakable" content="true">
+
+{{/* Schema.org — Website */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BoldBlog India",
+  "url": "https://boldblog.in",
+  "description": "India ka #1 Dating, Relationship aur Adult Content Guide",
+  "inLanguage": ["en-IN", "hi-IN"],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Adults 18+",
+    "geographicArea": {
+      "@type": "Country",
+      "name": "India"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://boldblog.in/?s={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
+
+{{/* Schema.org — Blog Post */}}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ if .Description }}{{ .Description | jsonify }}{{ else }}{{ .Site.Params.description | jsonify }}{{ end }},
+  "url": {{ .Permalink | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "BoldBlog Team",
+    "url": "https://boldblog.in"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BoldBlog India",
+    "url": "https://boldblog.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://boldblog.in/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  },
+  "inLanguage": "en-IN",
+  "keywords": {{ if .Params.keywords }}{{ .Params.keywords | jsonify }}{{ else }}"dating india, relationship tips, adult content india"{{ end }}
+}
+</script>
+
+{{/* FAQ Schema — AEO ke liye critical */}}
+{{ if .Content | findRE "## FAQ" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "{{ .Title }} ke baare mein kya jaanna chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ if .Description }}{{ .Description | jsonify }}{{ else }}"BoldBlog par is topic ki complete guide available hai."{{ end }}
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{/* Breadcrumb Schema */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://boldblog.in"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Section | title }}",
+      "item": "https://boldblog.in/{{ .Section }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+  ]
+}
+</script>
+{{ end }}
