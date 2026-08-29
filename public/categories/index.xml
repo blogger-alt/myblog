@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on BoldBlog</title>
+    <link>https://boldblog.in/categories/</link>
+    <description>Recent content in Categories on BoldBlog</description>
+    <image>
+      <title>BoldBlog</title>
+      <url>https://boldblog.in/images/og-image.png</url>
+      <link>https://boldblog.in/images/og-image.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-IN</language>
+    <lastBuildDate>Fri, 28 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://boldblog.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adult Reviews</title>
+      <link>https://boldblog.in/categories/adult-reviews/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://boldblog.in/categories/adult-reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relationship</title>
+      <link>https://boldblog.in/categories/relationship/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://boldblog.in/categories/relationship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sex Education</title>
+      <link>https://boldblog.in/categories/sex-education/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://boldblog.in/categories/sex-education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dating Apps</title>
+      <link>https://boldblog.in/categories/dating-apps/</link>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://boldblog.in/categories/dating-apps/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
