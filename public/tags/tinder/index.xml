@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tinder on BoldBlog</title>
+    <link>http://localhost:1313/tags/tinder/</link>
+    <description>Recent content in Tinder on BoldBlog</description>
+    <image>
+      <title>BoldBlog</title>
+      <url>https://boldblog.in/images/og-image.png</url>
+      <link>https://boldblog.in/images/og-image.png</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en-IN</language>
+    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tinder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Dating Apps India 2026 — Honest Review aur Comparison</title>
+      <link>http://localhost:1313/dating-apps/best-dating-apps-india-2026/</link>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/dating-apps/best-dating-apps-india-2026/</guid>
+      <description>India ke best dating apps 2026 ka honest review. Tinder, Bumble, Hinge, TrulyMadly — kaunsa app best hai aur kyun, sab jaanein.</description>
+    </item>
+  </channel>
+</rss>
