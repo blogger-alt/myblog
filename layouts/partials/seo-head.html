@@ -7,7 +7,7 @@
 
 {{/* Primary SEO */}}
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ end }}">
+<meta name="keywords" content="{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ end }}">
 <meta name="author" content="BoldBlog Team">
 <meta name="language" content="Hinglish, English, Hindi">
 <meta name="revisit-after" content="3 days">
@@ -24,10 +24,14 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="BoldBlog India">
 <meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://boldblog.in/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 {{ if .IsPage }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:author" content="BoldBlog Team">
+<meta property="article:section" content="{{ .Section | title }}">
 {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
 {{ end }}
 
@@ -36,6 +40,7 @@
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="twitter:site" content="@boldblogin">
+<meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
 
 {{/* GEO Tags — Location targeting */}}
 <meta name="geo.region" content="IN">
@@ -76,7 +81,7 @@
 </script>
 {{ end }}
 
-{{/* Schema.org — Blog Post */}}
+{{/* Schema.org — Blog Post — Updated with image, wordCount, articleSection */}}
 {{ if .IsPage }}
 <script type="application/ld+json">
 {
@@ -87,10 +92,18 @@
   "url": {{ .Permalink | jsonify }},
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://boldblog.in/images/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "articleSection": {{ if .Section }}{{ .Section | title | jsonify }}{{ else }}"General"{{ end }},
+  "wordCount": "1500",
   "author": {
-    "@type": "Organization",
+    "@type": "Person",
     "name": "BoldBlog Team",
-    "url": "https://boldblog.in"
+    "url": "https://boldblog.in/about/"
   },
   "publisher": {
     "@type": "Organization",
@@ -98,7 +111,9 @@
     "url": "https://boldblog.in",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://boldblog.in/logo.png"
+      "url": "https://boldblog.in/images/og-image.png",
+      "width": 1200,
+      "height": 630
     }
   },
   "mainEntityOfPage": {
@@ -130,7 +145,7 @@
 </script>
 {{ end }}
 
-{{/* Breadcrumb Schema — Fixed */}}
+{{/* Breadcrumb Schema — Fixed for all page types */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -170,7 +185,7 @@
         "name": {{ .Title | jsonify }}
       }
     }
-    {{ else if and .IsPage (not .Section) }},
+    {{ else if .IsPage }},
     {
       "@type": "ListItem",
       "position": 2,
