@@ -130,7 +130,7 @@
 </script>
 {{ end }}
 
-{{/* Breadcrumb Schema */}}
+{{/* Breadcrumb Schema — Fixed */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -147,7 +147,7 @@
         "name": "Home"
       }
     }
-    {{ if .Section }},
+    {{ if and .IsPage .Section }},
     {
       "@type": "ListItem",
       "position": 2,
@@ -158,9 +158,7 @@
         "url": {{ printf "https://boldblog.in/%s/" .Section | jsonify }},
         "name": {{ .Section | title | jsonify }}
       }
-    }
-    {{ end }}
-    {{ if and .IsPage .Section }},
+    },
     {
       "@type": "ListItem",
       "position": 3,
@@ -172,9 +170,20 @@
         "name": {{ .Title | jsonify }}
       }
     }
+    {{ else if and .IsPage (not .Section) }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify }},
+      "item": {
+        "@type": "WebPage",
+        "@id": {{ .Permalink | jsonify }},
+        "url": {{ .Permalink | jsonify }},
+        "name": {{ .Title | jsonify }}
+      }
+    }
     {{ end }}
   ]
 }
-</script>
 </script>
 {{ end }}
