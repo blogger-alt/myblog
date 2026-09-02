@@ -81,15 +81,15 @@
 </script>
 {{ end }}
 
-{{/* Schema.org — Blog Post — Updated with image, wordCount, articleSection */}}
+{{/* Schema.org — Blog Post */}}
 {{ if .IsPage }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": {{ .Title | jsonify }},
-  "description": {{ if .Description }}{{ .Description | jsonify }}{{ else }}{{ .Site.Params.description | jsonify }}{{ end }},
-  "url": {{ .Permalink | jsonify }},
+  "headline": "{{ .Title }}",
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+  "url": "{{ .Permalink }}",
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "image": {
@@ -98,7 +98,7 @@
     "width": 1200,
     "height": 630
   },
-  "articleSection": {{ if .Section }}{{ .Section | title | jsonify }}{{ else }}"General"{{ end }},
+  "articleSection": "{{ if .Section }}{{ .Section | title }}{{ else }}General{{ end }}",
   "wordCount": "1500",
   "author": {
     "@type": "Person",
@@ -118,10 +118,10 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": {{ .Permalink | jsonify }}
+    "@id": "{{ .Permalink }}"
   },
   "inLanguage": "en-IN",
-  "keywords": {{ if .Params.keywords }}{{ .Params.keywords | jsonify }}{{ else }}"dating india, relationship tips, adult content india"{{ end }}
+  "keywords": "{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else }}dating india, relationship tips, adult content india{{ end }}"
 }
 </script>
 
@@ -137,7 +137,7 @@
       "name": "{{ .Title }} ke baare mein kya jaanna chahiye?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ if .Description }}{{ .Description | jsonify }}{{ else }}"BoldBlog par is topic ki complete guide available hai."{{ end }}
+        "text": "{{ if .Description }}{{ .Description }}{{ else }}BoldBlog par is topic ki complete guide available hai.{{ end }}"
       }
     }
   ]
@@ -145,7 +145,7 @@
 </script>
 {{ end }}
 
-{{/* Breadcrumb Schema — Fixed for all page types */}}
+{{/* Breadcrumb Schema — Final Fixed Version */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -166,35 +166,35 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ .Section | title | jsonify }},
+      "name": "{{ .Section | title }}",
       "item": {
         "@type": "WebPage",
-        "@id": {{ printf "https://boldblog.in/%s/" .Section | jsonify }},
-        "url": {{ printf "https://boldblog.in/%s/" .Section | jsonify }},
-        "name": {{ .Section | title | jsonify }}
+        "@id": "https://boldblog.in/{{ .Section }}/",
+        "url": "https://boldblog.in/{{ .Section }}/",
+        "name": "{{ .Section | title }}"
       }
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": {{ .Title | jsonify }},
+      "name": "{{ .Title }}",
       "item": {
         "@type": "WebPage",
-        "@id": {{ .Permalink | jsonify }},
-        "url": {{ .Permalink | jsonify }},
-        "name": {{ .Title | jsonify }}
+        "@id": "{{ .Permalink }}",
+        "url": "{{ .Permalink }}",
+        "name": "{{ .Title }}"
       }
     }
     {{ else if .IsPage }},
     {
       "@type": "ListItem",
       "position": 2,
-      "name": {{ .Title | jsonify }},
+      "name": "{{ .Title }}",
       "item": {
         "@type": "WebPage",
-        "@id": {{ .Permalink | jsonify }},
-        "url": {{ .Permalink | jsonify }},
-        "name": {{ .Title | jsonify }}
+        "@id": "{{ .Permalink }}",
+        "url": "{{ .Permalink }}",
+        "name": "{{ .Title }}"
       }
     }
     {{ end }}
