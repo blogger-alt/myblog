@@ -7,6 +7,9 @@ keywords: ["safe sex guide india", "safe sex tips hindi", "contraception india",
 categories: ["Sex Education"]
 tags: ["safe sex", "sexual health", "contraception", "condom", "india"]
 summary: "India ke liye complete safe sex guide. Condoms, contraception, STDs aur sexual health ke baare mein sab kuch ek jagah."
+cover:
+  image: "/images/sex-ed-cover.png"
+  alt: "Sex Education India"
 ---
 
 ## Safe Sex Guide India 2026 — Poori Jaankari Ek Jagah

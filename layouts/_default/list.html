@@ -12,6 +12,12 @@
 <div class="posts">
 {{ range $paginator.Pages }}
 <article class="post-entry">
+  {{ if .Params.cover.image }}
+  <a href="{{ .Permalink }}" style="display:block;">
+    <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt }}" 
+      style="width:100%; height:180px; object-fit:cover; border-radius:12px 12px 0 0;" loading="lazy">
+  </a>
+  {{ end }}
   <header class="entry-header">
     <h2 class="entry-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -29,7 +35,6 @@
 {{ end }}
 </div>
 
-{{/* Pagination Navigation — This was missing */}}
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="pagination" style="text-align:center; margin: 40px 0;">
   {{ if $paginator.HasPrev }}

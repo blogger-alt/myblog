@@ -7,6 +7,9 @@ keywords: ["how to get more matches on tinder india", "tinder tips india", "tind
 categories: ["Dating Apps"]
 tags: ["tinder", "dating tips", "matches", "india", "profile"]
 summary: "Struggling with Tinder matches in India? These proven profile, bio, and strategy tips will dramatically increase your match rate in 2026."
+cover:
+  image: "/images/dating-cover.png"
+  alt: "Dating Apps India"
 ---
 
 ## How to Get More Matches on Tinder India 2026

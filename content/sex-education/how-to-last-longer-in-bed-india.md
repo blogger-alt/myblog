@@ -7,6 +7,9 @@ keywords: ["how to last longer in bed india", "last longer in bed tips", "premat
 categories: ["Sex Education"]
 tags: ["sexual health", "men health", "stamina", "india", "sex education"]
 summary: "Science-backed guide — how to last longer in bed. Proven techniques, exercises aur products jo actually kaam karte hain Indian men ke liye."
+cover:
+  image: "/images/sex-ed-cover.png"
+  alt: "Sex Education India"
 ---
 
 ## How to Last Longer in Bed — Complete Guide 2026

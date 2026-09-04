@@ -7,6 +7,9 @@ keywords: ["best dating apps india 2026", "tinder india review", "bumble india",
 categories: ["Dating Apps"]
 tags: ["tinder", "bumble", "hinge", "dating", "india"]
 summary: "Tinder, Bumble, Hinge, TrulyMadly — India ke top dating apps ka honest review. Kaunsa app best hai aur kyun — complete comparison 2026."
+cover:
+  image: "/images/dating-cover.png"
+  alt: "Dating Apps India"
 ---
 
 ## Best Dating Apps India 2026 — Kaunsa App Use Karein?

@@ -7,6 +7,9 @@ keywords: ["long distance relationship tips india", "ldr tips india", "long dist
 categories: ["Relationship"]
 tags: ["long distance relationship", "ldr", "relationship tips", "india", "couples"]
 summary: "Job transfers, higher studies abroad, family relocations — long distance is common in Indian relationships. Here's what actually keeps LDRs strong, based on research and real patterns."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Long Distance Relationship Tips India 2026

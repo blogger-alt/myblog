@@ -7,6 +7,9 @@ keywords: ["best condom brands india 2026", "best condoms india", "condom review
 categories: ["Sex Education"]
 tags: ["condoms", "sexual health", "india", "safe sex", "review"]
 summary: "Best condom brands India 2026 — Durex, Skore, Manforce, KamaSutra ka honest review. Kaunsa condom best hai India mein."
+cover:
+  image: "/images/sex-ed-cover.png"
+  alt: "Sex Education India"
 ---
 
 ## Best Condom Brands India 2026 — Complete Honest Review

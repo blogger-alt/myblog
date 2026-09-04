@@ -7,6 +7,9 @@ keywords: ["foreplay tips india", "foreplay guide hindi", "foreplay techniques i
 categories: ["Sex Education"]
 tags: ["foreplay", "sex education", "couples", "india", "intimacy"]
 summary: "Foreplay tips India — science-backed complete guide jo aapki aur aapke partner ki satisfaction guarantee kare."
+cover:
+  image: "/images/sex-ed-cover.png"
+  alt: "Sex Education India"
 ---
 
 ## Foreplay Tips India 2026 — Complete Science-Backed Guide

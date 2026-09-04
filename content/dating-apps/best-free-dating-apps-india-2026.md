@@ -7,6 +7,9 @@ keywords: ["best free dating apps india 2026", "free dating apps india", "dating
 categories: ["Dating Apps"]
 tags: ["free dating apps", "tinder free", "india", "dating", "2026"]
 summary: "Paise kharch kiye bina India mein best dating experience kaise milega? Yeh free dating apps actually kaam karte hain — honest review ke saath."
+cover:
+  image: "/images/dating-cover.png"
+  alt: "Dating Apps India"
 ---
 
 ## Best Free Dating Apps India 2026 — Complete Honest Guide

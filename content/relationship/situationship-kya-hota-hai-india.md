@@ -7,6 +7,9 @@ keywords: ["situationship kya hota hai", "situationship india", "situationship m
 categories: ["Relationship"]
 tags: ["situationship", "relationship", "india", "dating", "modern love"]
 summary: "Situationship — na pura relationship, na clearly kuch aur. India mein yeh trend kyun badh raha hai aur aap isme hain ya nahi — jaaniye is complete guide mein."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Situationship Kya Hota Hai — Complete Guide

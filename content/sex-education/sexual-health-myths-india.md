@@ -7,6 +7,9 @@ keywords: ["sexual health myths india", "sex myths india busted", "sex education
 categories: ["Sex Education"]
 tags: ["sexual health", "myths", "sex education", "india", "facts"]
 summary: "India mein sexual health ke baare mein bahut galat baatein sunne ko milti hain. Yeh 15 myths bilkul galat hain — science-backed facts ke saath."
+cover:
+  image: "/images/sex-ed-cover.png"
+  alt: "Sex Education India"
 ---
 
 ## Sexual Health Myths India — Science Kya Kehti Hai

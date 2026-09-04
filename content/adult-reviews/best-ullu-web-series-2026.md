@@ -7,6 +7,9 @@ keywords: ["best ullu web series 2026", "ullu web series list", "ullu hot series
 categories: ["Adult Reviews"]
 tags: ["ullu", "web series", "adult", "ott", "india"]
 summary: "Ullu app ki top 20 best web series 2026 — Palang Tod, Charmsukh, Riti Riwaj aur baaki popular shows ka honest review."
+cover:
+  image: "/images/adult-cover.png"
+  alt: "Adult Reviews India"
 ---
 
 ## Best Ullu Web Series 2026 — Poori List Ek Jagah

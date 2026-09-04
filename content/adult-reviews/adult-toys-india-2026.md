@@ -7,6 +7,9 @@ keywords: ["adult toys india 2026", "sex toys india", "adult products india", "b
 categories: ["Adult Reviews"]
 tags: ["adult toys", "sex toys", "india", "sexual wellness", "products"]
 summary: "India mein adult toys ki complete guide. Kaunse products legal hain, kahan se khareedein aur best options kaunse hain."
+cover:
+  image: "/images/adult-cover.png"
+  alt: "Adult Reviews India"
 ---
 
 ## Adult Toys India 2026 — Sab Kuch Jo Aapko Pata Hona Chahiye

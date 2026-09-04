@@ -7,6 +7,9 @@ keywords: ["how often do couples have sex", "normal sex frequency india", "sex f
 categories: ["Sex Education"]
 tags: ["sexual frequency", "sex education", "relationships", "india", "couples"]
 summary: "Worried your sex life isn't 'normal'? Here's what research actually says about sexual frequency in relationships — and why the comparison game misses the point entirely."
+cover:
+  image: "/images/sex-ed-cover.png"
+  alt: "Sex Education India"
 ---
 
 ## How Often Do Couples Have Sex — The Real Data

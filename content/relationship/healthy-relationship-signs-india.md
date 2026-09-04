@@ -7,6 +7,9 @@ keywords: ["signs of healthy relationship india", "healthy relationship signs", 
 categories: ["Relationship"]
 tags: ["healthy relationship", "relationship signs", "love", "india", "psychology"]
 summary: "Most people know the red flags — but what does a genuinely healthy relationship actually look like in India? These science-backed signs tell you you're on the right track."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Signs of a Healthy Relationship India 2026

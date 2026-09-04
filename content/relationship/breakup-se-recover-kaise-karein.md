@@ -7,6 +7,9 @@ keywords: ["breakup se kaise recover karein", "breakup recovery india", "breakup
 categories: ["Relationship"]
 tags: ["breakup", "healing", "recovery", "india", "relationship"]
 summary: "Breakup ka dard real hai — science bhi ise confirm karti hai. Yeh complete roadmap batayega kaise heal karein, kya avoid karein, aur genuinely move on kaise karein."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Breakup Se Kaise Recover Karein — Complete Guide

@@ -7,6 +7,9 @@ keywords: ["attraction tips india", "relationship tips hindi", "psychology of at
 categories: ["Relationship"]
 tags: ["attraction", "relationship", "psychology", "dating tips", "india"]
 summary: "Attraction aur relationship ki psychology. Kisi ko attract kaise karein, signs ki koi aapko like karta hai aur India mein dating tips."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Relationship aur Attraction — Psychology Ki Poori Guide

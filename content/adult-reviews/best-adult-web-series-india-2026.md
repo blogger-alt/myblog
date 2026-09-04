@@ -7,6 +7,9 @@ keywords: ["best adult web series india 2026", "ullu web series", "altbalaji hot
 categories: ["Adult Reviews"]
 tags: ["web series", "adult", "ullu", "altbalaji", "ott india"]
 summary: "India ki best adult web series 2026 — Ullu, ALTBalaji, Prime Play ki top 15 shows ka honest review aur comparison."
+cover:
+  image: "/images/adult-cover.png"
+  alt: "Adult Reviews India"
 ---
 
 ## Best Adult Web Series India 2026 — Poori List

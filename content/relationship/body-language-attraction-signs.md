@@ -7,6 +7,9 @@ keywords: ["body language attraction signs hindi", "body language se pyaar pehch
 categories: ["Relationship"]
 tags: ["body language", "attraction", "psychology", "signs", "india"]
 summary: "Words jhooth bol sakte hain, lekin body language rarely lies. Yeh 12 science-backed signs samjhaenge ki kisi ki genuine feelings kya hain — bina unse pooche."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Body Language Se Attraction Kaise Pehchanein

@@ -7,6 +7,9 @@ keywords: ["onlyfans india 2026", "onlyfans india guide", "onlyfans indian creat
 categories: ["Adult Reviews"]
 tags: ["onlyfans", "india", "adult content", "creators", "subscription"]
 summary: "OnlyFans India complete guide 2026 — legal status, payment methods, Indian creators aur best alternatives sab ek jagah."
+cover:
+  image: "/images/adult-cover.png"
+  alt: "Adult Reviews India"
 ---
 
 ## OnlyFans India Guide 2026 — Complete Information

@@ -7,6 +7,9 @@ keywords: ["red flags in relationships india", "toxic relationship signs india",
 categories: ["Relationship"]
 tags: ["red flags", "toxic relationship", "warning signs", "india", "dating"]
 summary: "20 clear red flags jo aapko relationship mein hamesha serious lene chahiye — toxic relationship se kaise bachein India mein."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Red Flags in Relationships India 2026 — Warning Signs Jo Ignore Mat Karo

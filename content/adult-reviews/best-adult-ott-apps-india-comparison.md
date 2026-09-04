@@ -7,6 +7,9 @@ keywords: ["best adult ott apps india 2026", "ullu vs altbalaji", "adult ott com
 categories: ["Adult Reviews"]
 tags: ["ott", "streaming", "ullu", "altbalaji", "india", "comparison"]
 summary: "India mein adult OTT platforms ki bharmaar hai — lekin kaunsa actually value deta hai? Yeh detailed comparison aapko sahi choice karne mein madad karega."
+cover:
+  image: "/images/adult-cover.png"
+  alt: "Adult Reviews India"
 ---
 
 ## Best Adult OTT Apps India 2026 — Complete Comparison Guide

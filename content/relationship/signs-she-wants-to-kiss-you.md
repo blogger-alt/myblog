@@ -7,6 +7,9 @@ keywords: ["signs she wants to kiss you", "signs a girl wants to kiss you india"
 categories: ["Relationship"]
 tags: ["kissing", "signs", "attraction", "relationship", "dating tips"]
 summary: "15 clear signs jo batate hain ki woh aapko kiss karna chahti hai — body language se lekar texting behavior tak sab kuch."
+cover:
+  image: "/images/relationship-cover.png"
+  alt: "Relationship Advice India"
 ---
 
 ## Signs She Wants to Kiss You — Kaise Jaanein?
