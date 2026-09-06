@@ -23,7 +23,7 @@
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="BoldBlog India">
-<meta property="og:locale" content="en_IN">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://boldblog.in/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -43,10 +43,7 @@
 <meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
 
 {{/* GEO Tags — Location targeting */}}
-<meta name="geo.region" content="IN">
-<meta name="geo.country" content="India">
-<meta name="ICBM" content="20.5937, 78.9629">
-<meta name="DC.language" content="en-IN">
+<meta name="DC.language" content="en">
 
 {{/* AEO — Answer Engine Optimization */}}
 <meta name="speakable" content="true">
@@ -62,13 +59,9 @@
   "description": "India ka #1 Dating, Relationship aur Adult Content Guide",
   "inLanguage": ["en-IN", "hi-IN"],
   "audience": {
-    "@type": "Audience",
-    "audienceType": "Adults 18+",
-    "geographicArea": {
-      "@type": "Country",
-      "name": "India"
-    }
-  },
+  "@type": "Audience",
+  "audienceType": "Adults 18+"
+}
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
