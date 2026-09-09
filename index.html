@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BoldBlog — Startups, AI Tools & Tech News</title>
-  <meta name="description" content="BoldBlog covers startups, AI tools, and tech news for founders and builders.">
+  <title>The Startup Blog — Startups, AI Tools & Tech News</title>
+  <meta name="description" content="News, tools, and insights for founders and builders in the startup world.">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/favicon.ico">
 </head>
@@ -12,26 +12,51 @@
 
   <div id="header-placeholder"></div>
 
-  <div class="home-hero">
-    <h1>BoldBlog</h1>
-    <p>Startup news, AI tools, and tech insights for founders and builders.</p>
-  </div>
+  <section class="hero-section">
+    <h1>The Startup Blog</h1>
+    <nav class="category-pills">
+      <a href="/startups/" class="active">Startups</a>
+      <a href="/ai-tools/">AI Tools</a>
+      <a href="/tech-news/">Tech News</a>
+    </nav>
+  </section>
+  <hr class="hero-divider">
 
-  <div class="container">
+  <!-- FEATURED POST — update this manually with your latest post -->
+  <section class="featured-post">
+    <div class="featured-text">
+      <div class="post-date-meta">
+        <span>Published Sep 2, 2026</span>
+        <span>5 min read</span>
+      </div>
+      <h2><a href="/startups/example-post.html">Your Featured Post Title Goes Here</a></h2>
+      <p>A short, compelling summary of your featured post that draws the reader in and makes them want to click through and read more.</p>
+      <a href="/startups/example-post.html" class="read-more">Read more →</a>
+    </div>
+    <div class="featured-image">
+      <img src="/images/featured-cover.png" alt="Featured post cover">
+    </div>
+  </section>
+
+  <!-- POST GRID -->
+  <section class="post-grid-section">
     <div class="post-grid">
 
-      <!-- Post cards go here — copy this block for each post -->
-      <!--
+      <!-- Copy this card block for each post -->
       <div class="post-card">
-        <span class="tag">Startups</span>
-        <h2><a href="/startups/post-name.html">Post Title Here</a></h2>
-        <p>Short summary of the post goes here.</p>
-        <div class="meta">Sep 2, 2026 · 5 min read</div>
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Post cover">
+        </div>
+        <div class="card-body">
+          <span class="tag">Startups</span>
+          <h3><a href="/startups/post-name.html">Post Title Here</a></h3>
+          <p>Short summary of the post goes here.</p>
+          <div class="meta">Sep 2, 2026 · 5 min read</div>
+        </div>
       </div>
-      -->
 
     </div>
-  </div>
+  </section>
 
   <div id="footer-placeholder"></div>
 
