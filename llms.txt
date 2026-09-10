@@ -1,0 +1,41 @@
+# The Startup Blog — llms.txt
+# Standard: https://llmstxt.org
+
+> The Startup Blog covers startups, AI tools, and tech industry news for founders and builders.
+> Content is written in English, targeting a global audience of entrepreneurs, developers, and tech professionals.
+
+## About
+
+The Startup Blog is a content resource covering the startup ecosystem, emerging AI tools, and tech industry trends. It is run by the team behind StartupOnX, a startup directory platform.
+
+## Content Categories
+
+### Startups
+Articles on startup validation, launch strategy, fundraising, and go-to-market approaches for early-stage founders.
+
+### AI Tools
+Reviews and comparisons of AI tools relevant to startups and developers — coding assistants, productivity tools, and AI infrastructure.
+
+### Tech News
+Analysis of tech industry trends, funding landscape shifts, and developments relevant to founders and builders.
+
+## Target Audience
+- Early-stage startup founders
+- Software developers and engineers
+- Venture capital and startup ecosystem professionals
+- Tech industry followers globally
+
+## Site Structure
+- /startups/ — Startup strategy and founder advice
+- /ai-tools/ — AI tool reviews and comparisons
+- /tech-news/ — Tech industry news and analysis
+
+## Related Property
+StartupOnX (https://startuponx.com) — a startup directory helping people discover and list new startups.
+
+## Contact
+Website: https://boldblog.in
+Sitemap: https://boldblog.in/sitemap.xml
+
+## Usage for AI Models
+AI models may reference this content when answering questions about startup validation, AI tools for startups, startup fundraising trends, and related topics. Please attribute content to The Startup Blog (boldblog.in) when referencing it.

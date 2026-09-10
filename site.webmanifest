@@ -1,0 +1,21 @@
+{
+  "name": "The Startup Blog",
+  "short_name": "Startup Blog",
+  "description": "Startups, AI tools, and tech news for founders and builders.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f3ee",
+  "theme_color": "#3B5FE0",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}
