@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <title>The Startup Blog — Startups, AI Tools & Tech News</title>
   <meta name="description" content="News, tools, and insights for founders and builders in the startup world.">
+  <link rel="canonical" href="https://boldblog.in/">
+
   <!-- Open Graph — Facebook, WhatsApp, LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Startup Blog — Startups, AI Tools & Tech News">
@@ -14,18 +17,80 @@
   <meta property="og:image" content="https://boldblog.in/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Startup Blog — Startups, AI Tools & Tech News">
   <meta name="twitter:description" content="News, tools, and insights for founders and builders in the startup world.">
   <meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
+
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Website Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "The Startup Blog",
+    "url": "https://boldblog.in",
+    "description": "News, tools, and insights for founders and builders in the startup world.",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Startup Blog",
+      "url": "https://boldblog.in",
+      "logo": { "@type": "ImageObject", "url": "https://boldblog.in/images/og-image.png" },
+      "sameAs": ["https://startuponx.com"]
+    }
+  }
+  </script>
+
+  <!-- Blog Schema listing recent posts -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "The Startup Blog",
+    "url": "https://boldblog.in",
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "How to Validate a Startup Idea Before Building It",
+        "url": "https://boldblog.in/startups/how-to-validate-startup-idea.html",
+        "datePublished": "2026-09-09"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Best AI Tools for Startups in 2026 — By Category",
+        "url": "https://boldblog.in/ai-tools/best-ai-tools-for-startups-2026.html",
+        "datePublished": "2026-09-09"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The State of AI Startup Funding in 2026",
+        "url": "https://boldblog.in/tech-news/ai-startup-funding-2026.html",
+        "datePublished": "2026-09-09"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Why Startup Directories Still Matter in 2026",
+        "url": "https://boldblog.in/startups/why-startup-directories-matter-2026.html",
+        "datePublished": "2026-09-09"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI Coding Assistants Compared 2026",
+        "url": "https://boldblog.in/ai-tools/ai-coding-assistants-compared-2026.html",
+        "datePublished": "2026-09-09"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -47,7 +112,7 @@
 
   <div class="post-card">
     <div class="card-image">
-      <img src="/images/startup-cover.png" alt="How to Validate a Startup Idea">
+      <img src="/images/startup-cover.png" alt="How to Validate a Startup Idea" loading="lazy">
     </div>
     <div class="card-body">
       <span class="tag">Startups</span>
@@ -59,7 +124,7 @@
 
   <div class="post-card">
     <div class="card-image">
-      <img src="/images/ai-tools-cover.png" alt="Best AI Tools for Startups 2026">
+      <img src="/images/ai-tools-cover.png" alt="Best AI Tools for Startups 2026" loading="lazy">
     </div>
     <div class="card-body">
       <span class="tag">AI Tools</span>
@@ -71,7 +136,7 @@
 
   <div class="post-card">
     <div class="card-image">
-      <img src="/images/tech-news-cover.png" alt="AI Startup Funding 2026">
+      <img src="/images/tech-news-cover.png" alt="AI Startup Funding 2026" loading="lazy">
     </div>
     <div class="card-body">
       <span class="tag">Tech News</span>
@@ -83,7 +148,7 @@
 
   <div class="post-card">
     <div class="card-image">
-      <img src="/images/startup-cover.png" alt="Why Startup Directories Matter">
+      <img src="/images/startup-cover.png" alt="Why Startup Directories Matter" loading="lazy">
     </div>
     <div class="card-body">
       <span class="tag">Startups</span>
@@ -95,7 +160,7 @@
 
   <div class="post-card">
     <div class="card-image">
-      <img src="/images/ai-tools-cover-2.png" alt="AI Coding Assistants Compared 2026">
+      <img src="/images/ai-tools-cover-2.png" alt="AI Coding Assistants Compared 2026" loading="lazy">
     </div>
     <div class="card-body">
       <span class="tag">AI Tools</span>

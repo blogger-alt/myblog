@@ -1,8 +1,13 @@
+# robots.txt for The Startup Blog (boldblog.in)
+
 User-agent: *
 Allow: /
 
-# Major search engines
+# ===== Major search engines =====
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
@@ -11,11 +16,14 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# AI crawlers — important for AEO/GEO visibility in AI search
+# ===== AI crawlers — important for AEO/GEO visibility in AI search =====
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: CCBot
@@ -27,13 +35,22 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-# Block low-value scraper bots
+User-agent: Applebot-Extended
+Allow: /
+
+# ===== Block low-value scraper bots =====
 User-agent: AhrefsBot
 Disallow: /
 
@@ -43,4 +60,8 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
+User-agent: DotBot
+Disallow: /
+
+# ===== Sitemap =====
 Sitemap: https://boldblog.in/sitemap.xml

@@ -2,9 +2,14 @@
 Name: The Startup Blog Team
 Site: https://boldblog.in
 Related: https://startuponx.com
+Contact: hello@boldblog.in
+
+/* THANKS */
+Cloudflare Pages
 
 /* SITE */
 Last update: 2026/09/09
 Language: English
 Doctype: HTML5
 Platform: Plain HTML + Cloudflare Pages
+Standards: HTML5, Schema.org, Open Graph

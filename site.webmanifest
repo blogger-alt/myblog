@@ -1,21 +1,37 @@
 {
-  "name": "The Startup Blog",
+  "name": "The Startup Blog — Startups, AI Tools & Tech News",
   "short_name": "Startup Blog",
   "description": "Startups, AI tools, and tech news for founders and builders.",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#f5f3ee",
   "theme_color": "#3B5FE0",
+  "lang": "en",
   "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
     {
       "src": "/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "categories": ["business", "news", "productivity"]
 }

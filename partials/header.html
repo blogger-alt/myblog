@@ -1,35 +1,42 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="header-left">
-      <div class="logo-group">
-  <img src="/images/logo.png" alt="The Startup Blog" style="width:32px; height:32px; border-radius:8px;">
-  <span>Startup Blog</span>
-</div>
-      <ul class="top-nav-links" id="mainNavLinks">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/startups/">Startups</a></li>
-        <li><a href="/ai-tools/">AI Tools</a></li>
-        <li><a href="/tech-news/">Tech News</a></li>
-      </ul>
+      <a href="/" class="logo-group" aria-label="The Startup Blog — Home">
+        <img src="/images/logo.png" alt="" width="32" height="32" style="border-radius:8px;">
+        <span>Startup Blog</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="top-nav-links" id="mainNavLinks">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/startups/">Startups</a></li>
+          <li><a href="/ai-tools/">AI Tools</a></li>
+          <li><a href="/tech-news/">Tech News</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="header-right">
       <a href="/about.html">About</a>
-      <a href="https://startuponx.com" target="_blank" class="cta-black-btn">Submit Startup</a>
-      <button class="mobile-toggle" id="mobileToggle">☰</button>
+      <a href="https://startuponx.com" target="_blank" rel="noopener" class="cta-black-btn">Submit Startup</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNavLinks">☰</button>
     </div>
   </div>
-  <ul class="top-nav-links" id="mobileNavLinks" style="display:none; flex-direction:column; padding:16px 24px; gap:14px;">
-    <li><a href="/">Home</a></li>
-    <li><a href="/startups/">Startups</a></li>
-    <li><a href="/ai-tools/">AI Tools</a></li>
-    <li><a href="/tech-news/">Tech News</a></li>
-    <li><a href="/about.html">About</a></li>
-  </ul>
+  <nav aria-label="Mobile navigation">
+    <ul class="top-nav-links" id="mobileNavLinks" style="display:none; flex-direction:column; padding:16px 24px; gap:14px;">
+      <li><a href="/">Home</a></li>
+      <li><a href="/startups/">Startups</a></li>
+      <li><a href="/ai-tools/">AI Tools</a></li>
+      <li><a href="/tech-news/">Tech News</a></li>
+      <li><a href="/about.html">About</a></li>
+    </ul>
+  </nav>
 </header>
 
 <script>
-  document.getElementById('mobileToggle').addEventListener('click', function() {
-    var nav = document.getElementById('mobileNavLinks');
-    nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+  var toggle = document.getElementById('mobileToggle');
+  var nav = document.getElementById('mobileNavLinks');
+  toggle.addEventListener('click', function() {
+    var isOpen = nav.style.display === 'flex';
+    nav.style.display = isOpen ? 'none' : 'flex';
+    toggle.setAttribute('aria-expanded', String(!isOpen));
   });
 </script>
