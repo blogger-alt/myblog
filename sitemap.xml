@@ -90,4 +90,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+    <url>
+    <loc>https://boldblog.in/tech-news/remote-vs-in-person-startups-2026.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://boldblog.in/startups/equity-for-employees-and-advisors.html</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
