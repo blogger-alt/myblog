@@ -5,40 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <title>The Startup Blog — Startups, AI Tools & Tech News</title>
-  <meta name="description" content="News, tools, and insights for founders and builders in the startup world.">
+  <meta name="description" content="Honest writing for founders who build real things. No fluff, no hype — just practical insights on startups, AI tools, and tech.">
   <link rel="canonical" href="https://boldblog.in/">
-
-  <!-- Open Graph — Facebook, WhatsApp, LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="The Startup Blog — Startups, AI Tools & Tech News">
-  <meta property="og:description" content="News, tools, and insights for founders and builders in the startup world.">
+  <meta property="og:description" content="Honest writing for founders who build real things.">
   <meta property="og:url" content="https://boldblog.in/">
   <meta property="og:site_name" content="The Startup Blog">
   <meta property="og:image" content="https://boldblog.in/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Startup Blog — Startups, AI Tools & Tech News">
-  <meta name="twitter:description" content="News, tools, and insights for founders and builders in the startup world.">
+  <meta name="twitter:description" content="Honest writing for founders who build real things.">
   <meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
-
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Website Schema -->
+  <!-- Reveal animation styles -->
+  <style>
+    .reveal-up { opacity:0; transform:translateY(20px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal-up.visible { opacity:1; transform:translateY(0); }
+    .reveal-fade { opacity:0; transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1); }
+    .reveal-fade.visible { opacity:1; }
+    .hero-reveal { opacity:0; transform:translateY(16px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+    .hero-reveal.visible { opacity:1; transform:translateY(0); }
+    .stagger > * { opacity:0; transform:translateY(14px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); }
+    .stagger.visible > *:nth-child(1) { transition-delay:0ms; }
+    .stagger.visible > *:nth-child(2) { transition-delay:70ms; }
+    .stagger.visible > *:nth-child(3) { transition-delay:140ms; }
+    .stagger.visible > *:nth-child(4) { transition-delay:210ms; }
+    .stagger.visible > *:nth-child(5) { transition-delay:280ms; }
+    .stagger.visible > *:nth-child(6) { transition-delay:350ms; }
+    .stagger.visible > *:nth-child(7) { transition-delay:420ms; }
+    .stagger.visible > *:nth-child(8) { transition-delay:490ms; }
+    .stagger.visible > *:nth-child(9) { transition-delay:560ms; }
+    .stagger.visible > *:nth-child(10) { transition-delay:630ms; }
+    .stagger.visible > *:nth-child(11) { transition-delay:700ms; }
+    .stagger.visible > *:nth-child(12) { transition-delay:770ms; }
+    .stagger.visible > *:nth-child(13) { transition-delay:840ms; }
+    .stagger.visible > *:nth-child(14) { transition-delay:910ms; }
+    .stagger.visible > *:nth-child(15) { transition-delay:980ms; }
+    .stagger.visible > *:nth-child(16) { transition-delay:1050ms; }
+    .stagger.visible > * { opacity:1; transform:translateY(0); }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "The Startup Blog",
     "url": "https://boldblog.in",
-    "description": "News, tools, and insights for founders and builders in the startup world.",
+    "description": "Honest writing for founders who build real things.",
     "inLanguage": "en",
     "publisher": {
       "@type": "Organization",
@@ -49,261 +69,253 @@
     }
   }
   </script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "The Startup Blog",
-  "url": "https://boldblog.in",
-  "blogPost": [
-    { "@type": "BlogPosting", "headline": "How to Validate a Startup Idea Before Building It", "url": "https://boldblog.in/startups/how-to-validate-startup-idea.html", "datePublished": "2026-09-09" },
-    { "@type": "BlogPosting", "headline": "Best AI Tools for Startups in 2026", "url": "https://boldblog.in/ai-tools/best-ai-tools-for-startups-2026.html", "datePublished": "2026-09-09" },
-    { "@type": "BlogPosting", "headline": "The State of AI Startup Funding in 2026", "url": "https://boldblog.in/tech-news/ai-startup-funding-2026.html", "datePublished": "2026-09-09" },
-    { "@type": "BlogPosting", "headline": "Why Startup Directories Still Matter in 2026", "url": "https://boldblog.in/startups/why-startup-directories-matter-2026.html", "datePublished": "2026-09-09" },
-    { "@type": "BlogPosting", "headline": "AI Coding Assistants Compared 2026", "url": "https://boldblog.in/ai-tools/ai-coding-assistants-compared-2026.html", "datePublished": "2026-09-09" },
-    { "@type": "BlogPosting", "headline": "How to Write a Startup Pitch Deck That Gets Funded", "url": "https://boldblog.in/startups/how-to-write-startup-pitch-deck.html", "datePublished": "2026-09-10" },
-    { "@type": "BlogPosting", "headline": "Best AI Agents for Startups in 2026", "url": "https://boldblog.in/ai-tools/best-ai-agents-for-startups-2026.html", "datePublished": "2026-09-10" },
-    { "@type": "BlogPosting", "headline": "Y Combinator vs Techstars vs 500 Global", "url": "https://boldblog.in/tech-news/startup-accelerators-compared-2026.html", "datePublished": "2026-09-10" },
-    { "@type": "BlogPosting", "headline": "Startup Equity Splitting: How to Divide Ownership", "url": "https://boldblog.in/startups/startup-equity-splitting-guide.html", "datePublished": "2026-09-10" },
-    { "@type": "BlogPosting", "headline": "ChatGPT vs Claude vs Gemini for Startup Founders", "url": "https://boldblog.in/ai-tools/chatgpt-vs-claude-vs-gemini-founders.html", "datePublished": "2026-09-10" },
-    { "@type": "BlogPosting", "headline": "Remote-First vs In-Person Startups in 2026", "url": "https://boldblog.in/tech-news/remote-vs-in-person-startups-2026.html", "datePublished": "2026-09-11" },
-    { "@type": "BlogPosting", "headline": "How Much Equity to Give Employees and Advisors", "url": "https://boldblog.in/startups/equity-for-employees-and-advisors.html", "datePublished": "2026-09-11" },
-    { "@type": "BlogPosting", "headline": "How to Find Investors for Your Startup in 2026", "url": "https://boldblog.in/startups/how-to-find-investors-for-startup.html", "datePublished": "2026-09-12" },
-    { "@type": "BlogPosting", "headline": "Seed Funding vs Bootstrapping", "url": "https://boldblog.in/startups/seed-funding-vs-bootstrapping.html", "datePublished": "2026-09-12" },
-    { "@type": "BlogPosting", "headline": "Startup Valuation Explained", "url": "https://boldblog.in/startups/startup-valuation-explained.html", "datePublished": "2026-09-12" },
-    { "@type": "BlogPosting", "headline": "SAFE vs Convertible Note", "url": "https://boldblog.in/startups/safe-vs-convertible-note.html", "datePublished": "2026-09-12" },
-    { "@type": "BlogPosting", "headline": "Startup Runway: How to Calculate and Extend It", "url": "https://boldblog.in/startups/startup-runway-calculation-guide.html", "datePublished": "2026-09-12" }
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "The Startup Blog",
+    "url": "https://boldblog.in",
+    "blogPost": [
+      { "@type": "BlogPosting", "headline": "How to Validate a Startup Idea Before Building It", "url": "https://boldblog.in/startups/how-to-validate-startup-idea.html", "datePublished": "2026-09-09" },
+      { "@type": "BlogPosting", "headline": "Best AI Tools for Startups in 2026", "url": "https://boldblog.in/ai-tools/best-ai-tools-for-startups-2026.html", "datePublished": "2026-09-09" },
+      { "@type": "BlogPosting", "headline": "The State of AI Startup Funding in 2026", "url": "https://boldblog.in/tech-news/ai-startup-funding-2026.html", "datePublished": "2026-09-09" },
+      { "@type": "BlogPosting", "headline": "Why Startup Directories Still Matter in 2026", "url": "https://boldblog.in/startups/why-startup-directories-matter-2026.html", "datePublished": "2026-09-09" },
+      { "@type": "BlogPosting", "headline": "AI Coding Assistants Compared 2026", "url": "https://boldblog.in/ai-tools/ai-coding-assistants-compared-2026.html", "datePublished": "2026-09-09" },
+      { "@type": "BlogPosting", "headline": "How to Write a Startup Pitch Deck That Gets Funded", "url": "https://boldblog.in/startups/how-to-write-startup-pitch-deck.html", "datePublished": "2026-09-10" },
+      { "@type": "BlogPosting", "headline": "Best AI Agents for Startups in 2026", "url": "https://boldblog.in/ai-tools/best-ai-agents-for-startups-2026.html", "datePublished": "2026-09-10" },
+      { "@type": "BlogPosting", "headline": "Y Combinator vs Techstars vs 500 Global", "url": "https://boldblog.in/tech-news/startup-accelerators-compared-2026.html", "datePublished": "2026-09-10" },
+      { "@type": "BlogPosting", "headline": "Startup Equity Splitting: How to Divide Ownership", "url": "https://boldblog.in/startups/startup-equity-splitting-guide.html", "datePublished": "2026-09-10" },
+      { "@type": "BlogPosting", "headline": "ChatGPT vs Claude vs Gemini for Startup Founders", "url": "https://boldblog.in/ai-tools/chatgpt-vs-claude-vs-gemini-founders.html", "datePublished": "2026-09-10" },
+      { "@type": "BlogPosting", "headline": "Remote-First vs In-Person Startups in 2026", "url": "https://boldblog.in/tech-news/remote-vs-in-person-startups-2026.html", "datePublished": "2026-09-11" },
+      { "@type": "BlogPosting", "headline": "How Much Equity to Give Employees and Advisors", "url": "https://boldblog.in/startups/equity-for-employees-and-advisors.html", "datePublished": "2026-09-11" },
+      { "@type": "BlogPosting", "headline": "How to Find Investors for Your Startup in 2026", "url": "https://boldblog.in/startups/how-to-find-investors-for-startup.html", "datePublished": "2026-09-12" },
+      { "@type": "BlogPosting", "headline": "Seed Funding vs Bootstrapping", "url": "https://boldblog.in/startups/seed-funding-vs-bootstrapping.html", "datePublished": "2026-09-12" },
+      { "@type": "BlogPosting", "headline": "Startup Valuation Explained", "url": "https://boldblog.in/startups/startup-valuation-explained.html", "datePublished": "2026-09-12" },
+      { "@type": "BlogPosting", "headline": "SAFE vs Convertible Note", "url": "https://boldblog.in/startups/safe-vs-convertible-note.html", "datePublished": "2026-09-12" },
+      { "@type": "BlogPosting", "headline": "Startup Runway: How to Calculate and Extend It", "url": "https://boldblog.in/startups/startup-runway-calculation-guide.html", "datePublished": "2026-09-12" }
+    ]
+  }
+  </script>
 </head>
 <body>
-
   <div id="header-placeholder"></div>
-
+  <!-- HERO -->
   <section class="hero-section">
-    <h1>The Startup Blog</h1>
-    <nav class="category-pills">
-      <a href="/startups/" class="active">Startups</a>
-      <a href="/ai-tools/">AI Tools</a>
-      <a href="/tech-news/">Tech News</a>
-    </nav>
+    <div class="hero-reveal">
+      <span style="font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:0.2em; color:var(--ink-faint); display:block; margin-bottom:32px;">The Startup Blog</span>
+    </div>
+    <h1 class="hero-reveal">Honest writing for founders who build real things.</h1>
+    <p class="hero-deck hero-reveal">No fluff, no hype. Practical insights on startups, AI tools, and what's actually happening in tech — written by people who've been there.</p>
+    <div class="hero-links hero-reveal">
+      <a href="#latest" class="link-underline">Read the latest</a>
+      <a href="/about.html" class="link-underline">About</a>
+    </div>
   </section>
-  <hr class="hero-divider">
-
-  <!-- POST GRID -->
-  <section class="post-grid-section">
-    <div class="post-grid">
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/startup-cover.png" alt="How to Validate a Startup Idea" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Startups</span>
-      <h3><a href="/startups/how-to-validate-startup-idea.html">How to Validate a Startup Idea Before Building It</a></h3>
-      <p>Practical, low-cost methods founders use to test demand before writing a single line of code.</p>
-      <div class="meta">Sep 9, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/ai-tools-cover.png" alt="Best AI Tools for Startups 2026" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">AI Tools</span>
-      <h3><a href="/ai-tools/best-ai-tools-for-startups-2026.html">Best AI Tools for Startups in 2026 — By Category</a></h3>
-      <p>The best AI tools for startups in 2026, organized by category — honest picks for lean teams.</p>
-      <div class="meta">Sep 9, 2026 · 9 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/tech-news-cover.png" alt="AI Startup Funding 2026" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Tech News</span>
-      <h3><a href="/tech-news/ai-startup-funding-2026.html">The State of AI Startup Funding in 2026</a></h3>
-      <p>What investors are prioritizing now, valuation trends, and what founders should focus on when raising.</p>
-      <div class="meta">Sep 9, 2026 · 7 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/startup-cover.png" alt="Why Startup Directories Matter" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Startups</span>
-      <h3><a href="/startups/why-startup-directories-matter-2026.html">Why Startup Directories Still Matter in 2026</a></h3>
-      <p>How directories drive early traffic, backlinks, and credibility — and how to use them effectively.</p>
-      <div class="meta">Sep 9, 2026 · 6 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/ai-tools-cover-2.png" alt="AI Coding Assistants Compared 2026" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">AI Tools</span>
-      <h3><a href="/ai-tools/ai-coding-assistants-compared-2026.html">AI Coding Assistants Compared 2026</a></h3>
-      <p>GitHub Copilot, Cursor, Claude Code, and more — honest breakdown of strengths, weaknesses, and fit.</p>
-      <div class="meta">Sep 9, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-    <div class="post-card">
-    <div class="card-image">
-      <img src="/images/startup-cover.png" alt="How to Write a Startup Pitch Deck" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Startups</span>
-      <h3><a href="/startups/how-to-write-startup-pitch-deck.html">How to Write a Startup Pitch Deck That Gets Funded</a></h3>
-      <p>The exact slide structure, what investors look for on each slide, and mistakes that kill funding conversations.</p>
-      <div class="meta">Sep 10, 2026 · 9 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/ai-tools-cover.png" alt="Best AI Agents for Startups 2026" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">AI Tools</span>
-      <h3><a href="/ai-tools/best-ai-agents-for-startups-2026.html">Best AI Agents for Startups in 2026 — What They Actually Do</a></h3>
-      <p>What autonomous AI agents can actually handle today, honest limitations, and how founders are using them.</p>
-      <div class="meta">Sep 10, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/tech-news-cover.png" alt="Startup Accelerators Compared 2026" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Tech News</span>
-      <h3><a href="/tech-news/startup-accelerators-compared-2026.html">Y Combinator vs Techstars vs 500 Global</a></h3>
-      <p>Funding amounts, equity taken, network strength, and which type of startup fits each accelerator best.</p>
-      <div class="meta">Sep 10, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/startup-cover.png" alt="Startup Equity Splitting Guide" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Startups</span>
-      <h3><a href="/startups/startup-equity-splitting-guide.html">Startup Equity Splitting: How to Divide Ownership</a></h3>
-      <p>Frameworks, vesting schedules, and common mistakes that cause co-founder conflict later.</p>
-      <div class="meta">Sep 10, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/ai-tools-cover-2.png" alt="ChatGPT vs Claude vs Gemini for Founders" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">AI Tools</span>
-      <h3><a href="/ai-tools/chatgpt-vs-claude-vs-gemini-founders.html">ChatGPT vs Claude vs Gemini for Startup Founders</a></h3>
-      <p>Strengths for writing, coding, research, and daily founder workflows.</p>
-      <div class="meta">Sep 10, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-    <div class="post-card">
-    <div class="card-image">
-      <img src="/images/tech-news-cover.png" alt="Remote vs In-Person Startups 2026" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Tech News</span>
-      <h3><a href="/tech-news/remote-vs-in-person-startups-2026.html">Remote-First vs In-Person Startups in 2026</a></h3>
-      <p>What the data actually shows about speed, hiring, culture, and outcomes.</p>
-      <div class="meta">Sep 11, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-  <div class="post-card">
-    <div class="card-image">
-      <img src="/images/startup-cover.png" alt="Equity for Employees and Advisors" loading="lazy">
-    </div>
-    <div class="card-body">
-      <span class="tag">Startups</span>
-      <h3><a href="/startups/equity-for-employees-and-advisors.html">How Much Equity to Give Employees and Advisors</a></h3>
-      <p>2026 benchmark ranges by role and stage, vesting norms, and common mistakes to avoid.</p>
-      <div class="meta">Sep 11, 2026 · 8 min read</div>
-    </div>
-  </div>
-
-       <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="How to Find Investors for Your Startup" loading="lazy">
+  <!-- FEATURED -->
+  <section style="max-width:var(--max-width); margin:0 auto; padding:0 24px 60px;">
+    <div class="reveal-up" style="margin-bottom:40px;">
+      <div class="section-header">
+        <span class="section-label">Featured</span>
+        <span class="section-rule"></span>
       </div>
-      <div class="card-body">
+    </div>
+    <div class="reveal-up" style="margin-bottom:60px;">
+      <article class="featured-post">
+        <div class="featured-image">
+          <img src="/images/startup-cover.png" alt="How to Validate a Startup Idea" loading="lazy">
+        </div>
+        <div class="featured-text">
+          <span class="tag">Startups</span>
+          <h2><a href="/startups/how-to-validate-startup-idea.html">How to Validate a Startup Idea Before Building It</a></h2>
+          <p>Practical, low-cost methods founders use to test demand before writing a single line of code. No theory — just what works.</p>
+          <div class="featured-author">
+            <span>Ankit Sharma</span>
+            <span>Sep 9, 2026</span>
+            <span>8 min read</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <div class="rule" style="max-width:var(--max-width); margin:0 auto;"></div>
+  <!-- TOPICS -->
+  <section class="topics-section reveal-up">
+    <div class="section-header" style="margin-bottom:32px;">
+      <span class="section-label">Topics</span>
+      <span class="section-rule"></span>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-item">
+        <h3><a href="/startups/">Startups</a></h3>
+        <span class="topic-count">10 articles</span>
+      </div>
+      <div class="topic-item">
+        <h3><a href="/ai-tools/">AI Tools</a></h3>
+        <span class="topic-count">4 articles</span>
+      </div>
+      <div class="topic-item">
+        <h3><a href="/tech-news/">Tech News</a></h3>
+        <span class="topic-count">3 articles</span>
+      </div>
+    </div>
+  </section>
+  <div class="rule" style="max-width:var(--max-width); margin:0 auto;"></div>
+  <!-- LATEST POSTS -->
+  <section id="latest" class="post-grid-section">
+    <div class="reveal-up" style="margin-bottom:40px;">
+      <div class="section-header">
+        <span class="section-label">Latest</span>
+        <span class="section-rule"></span>
+      </div>
+    </div>
+    <div class="stagger post-grid">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/ai-tools-cover.png" alt="Best AI Tools for Startups 2026" loading="lazy">
+        </div>
+        <span class="tag">AI Tools</span>
+        <h3><a href="/ai-tools/best-ai-tools-for-startups-2026.html">Best AI Tools for Startups in 2026 — By Category</a></h3>
+        <p>The best AI tools for startups in 2026, organized by category — honest picks for lean teams.</p>
+        <div class="meta"><span>Priya Desai</span><span>Sep 9, 2026</span><span>9 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/tech-news-cover.png" alt="AI Startup Funding 2026" loading="lazy">
+        </div>
+        <span class="tag">Tech News</span>
+        <h3><a href="/tech-news/ai-startup-funding-2026.html">The State of AI Startup Funding in 2026</a></h3>
+        <p>What investors are prioritizing now, valuation trends, and what founders should focus on when raising.</p>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 9, 2026</span><span>7 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Why Startup Directories Matter" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
-        <h3><a href="./how-to-find-investors-for-startup.html">How to Find Investors for Your Startup in 2026</a></h3>
-        <p>Where to actually look, how to get warm introductions, and how to build a targeted list instead of mass-emailing.</p>
-        <div class="meta">Sep 12, 2026 · 9 min read</div>
+        <h3><a href="/startups/why-startup-directories-matter-2026.html">Why Startup Directories Still Matter in 2026</a></h3>
+        <p>How directories drive early traffic, backlinks, and credibility — and how to use them effectively.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 9, 2026</span><span>6 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="Seed Funding vs Bootstrapping" loading="lazy">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/ai-tools-cover-2.png" alt="AI Coding Assistants Compared 2026" loading="lazy">
+        </div>
+        <span class="tag">AI Tools</span>
+        <h3><a href="/ai-tools/ai-coding-assistants-compared-2026.html">AI Coding Assistants Compared 2026</a></h3>
+        <p>GitHub Copilot, Cursor, Claude Code, and more — honest breakdown of strengths, weaknesses, and fit.</p>
+        <div class="meta"><span>Priya Desai</span><span>Sep 9, 2026</span><span>8 min</span></div>
       </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="How to Write a Startup Pitch Deck" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
-        <h3><a href="./seed-funding-vs-bootstrapping.html">Seed Funding vs Bootstrapping: Which Path Is Right</a></h3>
-        <p>Control, speed, risk, and outcomes — a practical framework for deciding which funding path fits your startup.</p>
-        <div class="meta">Sep 12, 2026 · 8 min read</div>
+        <h3><a href="/startups/how-to-write-startup-pitch-deck.html">How to Write a Startup Pitch Deck That Gets Funded</a></h3>
+        <p>The exact slide structure, what investors look for on each slide, and mistakes that kill funding conversations.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 10, 2026</span><span>9 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="Startup Valuation Explained" loading="lazy">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/ai-tools-cover.png" alt="Best AI Agents for Startups 2026" loading="lazy">
+        </div>
+        <span class="tag">AI Tools</span>
+        <h3><a href="/ai-tools/best-ai-agents-for-startups-2026.html">Best AI Agents for Startups in 2026 — What They Actually Do</a></h3>
+        <p>What autonomous AI agents can actually handle today, honest limitations, and how founders are using them.</p>
+        <div class="meta"><span>Priya Desai</span><span>Sep 10, 2026</span><span>8 min</span></div>
       </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/tech-news-cover.png" alt="Startup Accelerators Compared 2026" loading="lazy">
+        </div>
+        <span class="tag">Tech News</span>
+        <h3><a href="/tech-news/startup-accelerators-compared-2026.html">Y Combinator vs Techstars vs 500 Global</a></h3>
+        <p>Funding amounts, equity taken, network strength, and which type of startup fits each accelerator best.</p>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 10, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Startup Equity Splitting Guide" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
-        <h3><a href="./startup-valuation-explained.html">Startup Valuation Explained: How Investors Calculate It</a></h3>
+        <h3><a href="/startups/startup-equity-splitting-guide.html">Startup Equity Splitting: How to Divide Ownership</a></h3>
+        <p>Frameworks, vesting schedules, and common mistakes that cause co-founder conflict later.</p>
+        <div class="meta"><span>Mei Lin</span><span>Sep 10, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/ai-tools-cover-2.png" alt="ChatGPT vs Claude vs Gemini for Founders" loading="lazy">
+        </div>
+        <span class="tag">AI Tools</span>
+        <h3><a href="/ai-tools/chatgpt-vs-claude-vs-gemini-founders.html">ChatGPT vs Claude vs Gemini for Startup Founders</a></h3>
+        <p>Strengths for writing, coding, research, and daily founder workflows.</p>
+        <div class="meta"><span>Priya Desai</span><span>Sep 10, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/tech-news-cover.png" alt="Remote vs In-Person Startups 2026" loading="lazy">
+        </div>
+        <span class="tag">Tech News</span>
+        <h3><a href="/tech-news/remote-vs-in-person-startups-2026.html">Remote-First vs In-Person Startups in 2026</a></h3>
+        <p>What the data actually shows about speed, hiring, culture, and outcomes.</p>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 11, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Equity for Employees and Advisors" loading="lazy">
+        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="/startups/equity-for-employees-and-advisors.html">How Much Equity to Give Employees and Advisors</a></h3>
+        <p>2026 benchmark ranges by role and stage, vesting norms, and common mistakes to avoid.</p>
+        <div class="meta"><span>Mei Lin</span><span>Sep 11, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="How to Find Investors for Your Startup" loading="lazy">
+        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="/startups/how-to-find-investors-for-startup.html">How to Find Investors for Your Startup in 2026</a></h3>
+        <p>Where to actually look, how to get warm introductions, and how to build a targeted list.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 12, 2026</span><span>9 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Seed Funding vs Bootstrapping" loading="lazy">
+        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="/startups/seed-funding-vs-bootstrapping.html">Seed Funding vs Bootstrapping: Which Path Is Right</a></h3>
+        <p>Control, speed, risk, and outcomes — a practical framework for deciding which funding path fits.</p>
+        <div class="meta"><span>Mei Lin</span><span>Sep 12, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Startup Valuation Explained" loading="lazy">
+        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="/startups/startup-valuation-explained.html">Startup Valuation Explained: How Investors Calculate It</a></h3>
         <p>How investors actually calculate pre-seed and seed valuations, and what factors matter most.</p>
-        <div class="meta">Sep 12, 2026 · 8 min read</div>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 12, 2026</span><span>8 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="SAFE vs Convertible Note" loading="lazy">
-      </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="SAFE vs Convertible Note" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
-        <h3><a href="./safe-vs-convertible-note.html">SAFE vs Convertible Note: What Founders Need to Know</a></h3>
-        <p>How each instrument works, key differences, and which is more common for early-stage fundraising in 2026.</p>
-        <div class="meta">Sep 12, 2026 · 8 min read</div>
+        <h3><a href="/startups/safe-vs-convertible-note.html">SAFE vs Convertible Note: What Founders Need to Know</a></h3>
+        <p>How each instrument works, key differences, and which is more common for early-stage fundraising.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 12, 2026</span><span>8 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="Startup Runway Calculation Guide" loading="lazy">
-      </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="/images/startup-cover.png" alt="Startup Runway Calculation Guide" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
-        <h3><a href="./startup-runway-calculation-guide.html">Startup Runway: How to Calculate and Extend It</a></h3>
+        <h3><a href="/startups/startup-runway-calculation-guide.html">Startup Runway: How to Calculate and Extend It</a></h3>
         <p>How much runway to raise for, and practical ways to extend it before your next fundraise.</p>
-        <div class="meta">Sep 12, 2026 · 7 min read</div>
+        <div class="meta"><span>Mei Lin</span><span>Sep 12, 2026</span><span>7 min</span></div>
       </div>
-     </div>
-     
-</div>
+    </div>
   </section>
-
   <div id="footer-placeholder"></div>
-
   <script src="/js/include.js"></script>
 </body>
 </html>

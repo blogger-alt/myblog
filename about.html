@@ -5,36 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <title>About — The Startup Blog</title>
-  <meta name="description" content="The Startup Blog covers startups, AI tools, and tech news for founders and builders.">
+  <meta name="description" content="Honest writing for startup founders. No fluff, no hype — just practical insights.">
   <link rel="canonical" href="https://boldblog.in/about.html">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="About — The Startup Blog">
-  <meta property="og:description" content="The Startup Blog covers startups, AI tools, and tech news for founders and builders.">
+  <meta property="og:description" content="Honest writing for startup founders.">
   <meta property="og:url" content="https://boldblog.in/about.html">
   <meta property="og:site_name" content="The Startup Blog">
   <meta property="og:image" content="https://boldblog.in/images/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About — The Startup Blog">
-  <meta name="twitter:description" content="The Startup Blog covers startups, AI tools, and tech news for founders and builders.">
+  <meta name="twitter:description" content="Honest writing for startup founders.">
   <meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
-
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-
+  <style>
+    .reveal-up { opacity:0; transform:translateY(20px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal-up.visible { opacity:1; transform:translateY(0); }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About The Startup Blog",
-    "description": "The Startup Blog covers startups, AI tools, and tech news for founders and builders.",
+    "description": "Honest writing for startup founders.",
     "url": "https://boldblog.in/about.html",
     "publisher": {
       "@type": "Organization",
@@ -45,32 +43,47 @@
     }
   }
   </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://boldblog.in/" },
-      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://boldblog.in/about.html" }
-    ]
-  }
-  </script>
 </head>
 <body>
-
   <div id="header-placeholder"></div>
-
-  <div class="post-single content-container">
-    <h1 class="post-title">About The Startup Blog</h1>
-    <div class="post-content">
-      <p>The Startup Blog covers the startup ecosystem, emerging AI tools, and tech industry news — built for founders, builders, and people who follow tech closely.</p>
-      <p>We also run <a href="https://startuponx.com" target="_blank">StartupOnX</a>, a directory helping people discover and list new startups.</p>
+  <section style="max-width:var(--max-width); margin:0 auto; padding:80px 24px 0;">
+    <div class="reveal-up" style="max-width:680px;">
+      <span style="font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:0.2em; color:var(--ink-faint); display:block; margin-bottom:24px;">About</span>
+      <h1 style="font-family:var(--serif); font-size:clamp(2rem,4vw,3rem); font-weight:400; line-height:1.12; letter-spacing:-0.02em; margin-bottom:24px;">
+        We believe in the power of honest writing.
+      </h1>
+      <p style="font-size:1rem; color:var(--ink-lighter); line-height:1.75; margin-bottom:12px;">
+        BoldBlog was born from a simple conviction: startup founders deserve better content. Not recycled listicles, not hype — real, practical insight from people who've been in the trenches.
+      </p>
+      <p style="font-size:1rem; color:var(--ink-lighter); line-height:1.75;">
+        We also run <a href="https://startuponx.com" target="_blank" style="color:var(--accent); text-decoration:underline; text-underline-offset:2px;">StartupOnX</a>, a directory helping people discover and list new startups.
+      </p>
     </div>
-  </div>
-
+  </section>
+  <div class="rule" style="max-width:var(--max-width); margin:48px auto;"></div>
+  <!-- Values -->
+  <section style="max-width:var(--max-width); margin:0 auto; padding:0 24px 60px;">
+    <div class="values-grid reveal-up">
+      <div class="value-item">
+        <div class="value-label">Mission</div>
+        <p>To give founders honest, practical insight — no filler, no fluff, no recycled takes.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-label">Vision</div>
+        <p>A world where the best startup content rises to the top, not the loudest.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-label">Values</div>
+        <p>Depth over speed. Honesty over hype. Utility over entertainment.</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section style="max-width:var(--max-width); margin:0 auto; padding:0 24px 80px; text-align:center;">
+    <h2 style="font-family:var(--serif); font-size:1.75rem; font-weight:400; margin-bottom:24px;">Ready to dive in?</h2>
+    <a href="/" class="link-underline" style="font-size:13px; font-weight:500; text-transform:uppercase; letter-spacing:0.1em; color:var(--ink);">Read the latest</a>
+  </section>
   <div id="footer-placeholder"></div>
-
   <script src="/js/include.js"></script>
 </body>
 </html>

@@ -7,7 +7,6 @@
   <title>Startups — The Startup Blog</title>
   <meta name="description" content="Startup validation, launch strategy, and fundraising advice for early-stage founders.">
   <link rel="canonical" href="https://boldblog.in/startups/">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="Startups — The Startup Blog">
   <meta property="og:description" content="Startup validation, launch strategy, and fundraising advice for early-stage founders.">
@@ -16,18 +15,31 @@
   <meta property="og:image" content="https://boldblog.in/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Startups — The Startup Blog">
   <meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
-
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-
+  <style>
+    .reveal-up { opacity:0; transform:translateY(20px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal-up.visible { opacity:1; transform:translateY(0); }
+    .stagger > * { opacity:0; transform:translateY(14px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); }
+    .stagger.visible > *:nth-child(1) { transition-delay:0ms; }
+    .stagger.visible > *:nth-child(2) { transition-delay:70ms; }
+    .stagger.visible > *:nth-child(3) { transition-delay:140ms; }
+    .stagger.visible > *:nth-child(4) { transition-delay:210ms; }
+    .stagger.visible > *:nth-child(5) { transition-delay:280ms; }
+    .stagger.visible > *:nth-child(6) { transition-delay:350ms; }
+    .stagger.visible > *:nth-child(7) { transition-delay:420ms; }
+    .stagger.visible > *:nth-child(8) { transition-delay:490ms; }
+    .stagger.visible > *:nth-child(9) { transition-delay:560ms; }
+    .stagger.visible > *:nth-child(10) { transition-delay:630ms; }
+    .stagger.visible > * { opacity:1; transform:translateY(0); }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +49,6 @@
     "url": "https://boldblog.in/startups/"
   }
   </script>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,140 +61,112 @@
   </script>
 </head>
 <body>
-
   <div id="header-placeholder"></div>
-
-  <section class="hero-section">
+  <!-- Category Header -->
+  <div class="category-header">
+    <a href="/" style="display:inline-flex; align-items:center; gap:6px; font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:0.15em; color:var(--ink-faint); margin-bottom:40px; transition:color 0.2s ease; text-decoration:none;" onmouseover="this.style.color='var(--ink-lighter)'" onmouseout="this.style.color='var(--ink-faint)'">← Home</a>
+    <span class="cat-label">Startups</span>
     <h1>Startups</h1>
-  </section>
-  <hr class="hero-divider">
-
+    <p class="cat-desc">Building, growing, and surviving the startup journey — honest advice from people who've been there.</p>
+    <p class="cat-count">10 articles</p>
+  </div>
+  <div class="rule" style="max-width:var(--max-width); margin:0 auto;"></div>
+  <!-- Posts -->
   <section class="post-grid-section">
-    <div class="post-grid">
-
+    <div class="stagger post-grid">
       <div class="post-card">
         <div class="card-image">
           <img src="../images/startup-cover.png" alt="How to Validate a Startup Idea" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Startups</span>
-          <h3><a href="./how-to-validate-startup-idea.html">How to Validate a Startup Idea Before Building It</a></h3>
-          <p>Practical, low-cost methods founders use to test demand before writing a single line of code.</p>
-          <div class="meta">Sep 9, 2026 · 8 min read</div>
-        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="./how-to-validate-startup-idea.html">How to Validate a Startup Idea Before Building It</a></h3>
+        <p>Practical, low-cost methods founders use to test demand before writing a single line of code.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 9, 2026</span><span>8 min</span></div>
       </div>
-
       <div class="post-card">
         <div class="card-image">
           <img src="../images/startup-cover.png" alt="Why Startup Directories Matter" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Startups</span>
-          <h3><a href="./why-startup-directories-matter-2026.html">Why Startup Directories Still Matter in 2026</a></h3>
-          <p>How directories drive early traffic, backlinks, and credibility — and how to use them effectively.</p>
-          <div class="meta">Sep 9, 2026 · 6 min read</div>
-        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="./why-startup-directories-matter-2026.html">Why Startup Directories Still Matter in 2026</a></h3>
+        <p>How directories drive early traffic, backlinks, and credibility — and how to use them effectively.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 9, 2026</span><span>6 min</span></div>
       </div>
       <div class="post-card">
         <div class="card-image">
           <img src="../images/startup-cover.png" alt="How to Write a Startup Pitch Deck" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Startups</span>
-          <h3><a href="./how-to-write-startup-pitch-deck.html">How to Write a Startup Pitch Deck That Gets Funded</a></h3>
-          <p>The exact slide structure, what investors look for on each slide, and mistakes that kill funding conversations.</p>
-          <div class="meta">Sep 10, 2026 · 9 min read</div>
-        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="./how-to-write-startup-pitch-deck.html">How to Write a Startup Pitch Deck That Gets Funded</a></h3>
+        <p>The exact slide structure, what investors look for on each slide, and mistakes that kill funding conversations.</p>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 10, 2026</span><span>9 min</span></div>
       </div>
-
       <div class="post-card">
         <div class="card-image">
           <img src="../images/startup-cover.png" alt="Startup Equity Splitting Guide" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Startups</span>
-          <h3><a href="./startup-equity-splitting-guide.html">Startup Equity Splitting: How to Divide Ownership</a></h3>
-          <p>Frameworks, vesting schedules, and common mistakes that cause co-founder conflict later.</p>
-          <div class="meta">Sep 10, 2026 · 8 min read</div>
-        </div>
+        <span class="tag">Startups</span>
+        <h3><a href="./startup-equity-splitting-guide.html">Startup Equity Splitting: How to Divide Ownership</a></h3>
+        <p>Frameworks, vesting schedules, and common mistakes that cause co-founder conflict later.</p>
+        <div class="meta"><span>Mei Lin</span><span>Sep 10, 2026</span><span>8 min</span></div>
       </div>
-
-            <div class="post-card">
+      <div class="post-card">
         <div class="card-image">
           <img src="../images/startup-cover.png" alt="Equity for Employees and Advisors" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Startups</span>
-          <h3><a href="./equity-for-employees-and-advisors.html">How Much Equity to Give Employees and Advisors</a></h3>
-          <p>2026 benchmark ranges by role and stage, vesting norms, and common mistakes to avoid.</p>
-          <div class="meta">Sep 11, 2026 · 8 min read</div>
+        <span class="tag">Startups</span>
+        <h3><a href="./equity-for-employees-and-advisors.html">How Much Equity to Give Employees and Advisors</a></h3>
+        <p>2026 benchmark ranges by role and stage, vesting norms, and common mistakes to avoid.</p>
+        <div class="meta"><span>Mei Lin</span><span>Sep 11, 2026</span><span>8 min</span></div>
+      </div>
+      <div class="post-card">
+        <div class="card-image">
+          <img src="../images/startup-cover.png" alt="How to Find Investors for Your Startup" loading="lazy">
         </div>
-      </div>
-      
-          <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="How to Find Investors for Your Startup" loading="lazy">
-      </div>
-      <div class="card-body">
         <span class="tag">Startups</span>
         <h3><a href="./how-to-find-investors-for-startup.html">How to Find Investors for Your Startup in 2026</a></h3>
         <p>Where to actually look, how to get warm introductions, and how to build a targeted list instead of mass-emailing.</p>
-        <div class="meta">Sep 12, 2026 · 9 min read</div>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 12, 2026</span><span>9 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="Seed Funding vs Bootstrapping" loading="lazy">
-      </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="../images/startup-cover.png" alt="Seed Funding vs Bootstrapping" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
         <h3><a href="./seed-funding-vs-bootstrapping.html">Seed Funding vs Bootstrapping: Which Path Is Right</a></h3>
         <p>Control, speed, risk, and outcomes — a practical framework for deciding which funding path fits your startup.</p>
-        <div class="meta">Sep 12, 2026 · 8 min read</div>
+        <div class="meta"><span>Mei Lin</span><span>Sep 12, 2026</span><span>8 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="Startup Valuation Explained" loading="lazy">
-      </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="../images/startup-cover.png" alt="Startup Valuation Explained" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
         <h3><a href="./startup-valuation-explained.html">Startup Valuation Explained: How Investors Calculate It</a></h3>
         <p>How investors actually calculate pre-seed and seed valuations, and what factors matter most.</p>
-        <div class="meta">Sep 12, 2026 · 8 min read</div>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 12, 2026</span><span>8 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="SAFE vs Convertible Note" loading="lazy">
-      </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="../images/startup-cover.png" alt="SAFE vs Convertible Note" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
         <h3><a href="./safe-vs-convertible-note.html">SAFE vs Convertible Note: What Founders Need to Know</a></h3>
         <p>How each instrument works, key differences, and which is more common for early-stage fundraising in 2026.</p>
-        <div class="meta">Sep 12, 2026 · 8 min read</div>
+        <div class="meta"><span>Ankit Sharma</span><span>Sep 12, 2026</span><span>8 min</span></div>
       </div>
-     </div>
-
-     <div class="post-card">
-      <div class="card-image">
-        <img src="../images/startup-cover.png" alt="Startup Runway Calculation Guide" loading="lazy">
-      </div>
-      <div class="card-body">
+      <div class="post-card">
+        <div class="card-image">
+          <img src="../images/startup-cover.png" alt="Startup Runway Calculation Guide" loading="lazy">
+        </div>
         <span class="tag">Startups</span>
         <h3><a href="./startup-runway-calculation-guide.html">Startup Runway: How to Calculate and Extend It</a></h3>
         <p>How much runway to raise for, and practical ways to extend it before your next fundraise.</p>
-        <div class="meta">Sep 12, 2026 · 7 min read</div>
+        <div class="meta"><span>Mei Lin</span><span>Sep 12, 2026</span><span>7 min</span></div>
       </div>
-     </div>
     </div>
   </section>
-
   <div id="footer-placeholder"></div>
-
   <script src="../js/include.js"></script>
 </body>
 </html>

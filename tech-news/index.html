@@ -7,7 +7,6 @@
   <title>Tech News — The Startup Blog</title>
   <meta name="description" content="Tech industry news, funding trends, and analysis relevant to founders and builders.">
   <link rel="canonical" href="https://boldblog.in/tech-news/">
-
   <meta property="og:type" content="website">
   <meta property="og:title" content="Tech News — The Startup Blog">
   <meta property="og:description" content="Tech industry news, funding trends, and analysis relevant to founders and builders.">
@@ -16,18 +15,24 @@
   <meta property="og:image" content="https://boldblog.in/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Tech News — The Startup Blog">
   <meta name="twitter:image" content="https://boldblog.in/images/og-image.png">
-
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-
+  <style>
+    .reveal-up { opacity:0; transform:translateY(20px); transition: opacity 0.8s cubic-bezier(0.16,1,0.3,1), transform 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal-up.visible { opacity:1; transform:translateY(0); }
+    .stagger > * { opacity:0; transform:translateY(14px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); }
+    .stagger.visible > *:nth-child(1) { transition-delay:0ms; }
+    .stagger.visible > *:nth-child(2) { transition-delay:70ms; }
+    .stagger.visible > *:nth-child(3) { transition-delay:140ms; }
+    .stagger.visible > * { opacity:1; transform:translateY(0); }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +42,6 @@
     "url": "https://boldblog.in/tech-news/"
   }
   </script>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,58 +54,49 @@
   </script>
 </head>
 <body>
-
   <div id="header-placeholder"></div>
-
-  <section class="hero-section">
+  <!-- Category Header -->
+  <div class="category-header">
+    <a href="/" style="display:inline-flex; align-items:center; gap:6px; font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:0.15em; color:var(--ink-faint); margin-bottom:40px; transition:color 0.2s ease; text-decoration:none;" onmouseover="this.style.color='var(--ink-lighter)'" onmouseout="this.style.color='var(--ink-faint)'">← Home</a>
+    <span class="cat-label">Tech News</span>
     <h1>Tech News</h1>
-  </section>
-  <hr class="hero-divider">
-
+    <p class="cat-desc">What's changing in tech and why it matters for founders — funding shifts, market moves, and industry analysis.</p>
+    <p class="cat-count">3 articles</p>
+  </div>
+  <div class="rule" style="max-width:var(--max-width); margin:0 auto;"></div>
+  <!-- Posts -->
   <section class="post-grid-section">
-    <div class="post-grid">
-
+    <div class="stagger post-grid">
       <div class="post-card">
         <div class="card-image">
           <img src="../images/tech-news-cover.png" alt="AI Startup Funding 2026" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Tech News</span>
-          <h3><a href="./ai-startup-funding-2026.html">The State of AI Startup Funding in 2026</a></h3>
-          <p>What investors are prioritizing now, valuation trends, and what founders should focus on when raising.</p>
-          <div class="meta">Sep 9, 2026 · 7 min read</div>
-        </div>
+        <span class="tag">Tech News</span>
+        <h3><a href="./ai-startup-funding-2026.html">The State of AI Startup Funding in 2026</a></h3>
+        <p>What investors are prioritizing now, valuation trends, and what founders should focus on when raising.</p>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 9, 2026</span><span>7 min</span></div>
       </div>
-
-            <div class="post-card">
+      <div class="post-card">
         <div class="card-image">
           <img src="../images/tech-news-cover.png" alt="Startup Accelerators Compared 2026" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Tech News</span>
-          <h3><a href="./startup-accelerators-compared-2026.html">Y Combinator vs Techstars vs 500 Global</a></h3>
-          <p>Funding amounts, equity taken, network strength, and which type of startup fits each accelerator best.</p>
-          <div class="meta">Sep 10, 2026 · 8 min read</div>
-        </div>
+        <span class="tag">Tech News</span>
+        <h3><a href="./startup-accelerators-compared-2026.html">Y Combinator vs Techstars vs 500 Global</a></h3>
+        <p>Funding amounts, equity taken, network strength, and which type of startup fits each accelerator best.</p>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 10, 2026</span><span>8;min</span></div>
       </div>
-      
-            <div class="post-card">
+      <div class="post-card">
         <div class="card-image">
           <img src="../images/tech-news-cover.png" alt="Remote vs In-Person Startups 2026" loading="lazy">
         </div>
-        <div class="card-body">
-          <span class="tag">Tech News</span>
-          <h3><a href="./remote-vs-in-person-startups-2026.html">Remote-First vs In-Person Startups in 2026</a></h3>
-          <p>What the data actually shows about speed, hiring, culture, and outcomes.</p>
-          <div class="meta">Sep 11, 2026 · 8 min read</div>
-        </div>
+        <span class="tag">Tech News</span>
+        <h3><a href="./remote-vs-in-person-startups-2026.html">Remote-First vs In-Person Startups in 2026</a></h3>
+        <p>What the data actually shows about speed, hiring, culture, and outcomes.</p>
+        <div class="meta"><span>Jake Morrison</span><span>Sep 11, 2026</span><span>8 min</span></div>
       </div>
-      
     </div>
   </section>
-
   <div id="footer-placeholder"></div>
-
   <script src="../js/include.js"></script>
 </body>
 </html>

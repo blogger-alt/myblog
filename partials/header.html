@@ -2,7 +2,7 @@
   <div class="header-inner">
     <div class="header-left">
       <a href="/" class="logo-group" aria-label="The Startup Blog — Home">
-        <img src="/images/logo.png" alt="" width="32" height="32" style="border-radius:8px;">
+        <img src="/images/logo.png" alt="" width="28" height="28" style="border-radius:6px;">
         <span>Startup Blog</span>
       </a>
       <nav aria-label="Main navigation">
@@ -16,12 +16,13 @@
     </div>
     <div class="header-right">
       <a href="/about.html">About</a>
-      <a href="https://startuponx.com" target="_blank" rel="noopener" class="cta-black-btn">Submit Startup</a>
+      <a href="https://startuponx.com" target="_blank" rel="noopener" class="cta-btn-header">Submit Startup</a>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNavLinks">☰</button>
     </div>
   </div>
+  <div class="header-rule"></div>
   <nav aria-label="Mobile navigation">
-    <ul class="top-nav-links" id="mobileNavLinks" style="display:none; flex-direction:column; padding:16px 24px; gap:14px;">
+    <ul class="top-nav-links" id="mobileNavLinks" style="display:none; flex-direction:column; padding:12px 24px; gap:14px; background:var(--cream);">
       <li><a href="/">Home</a></li>
       <li><a href="/startups/">Startups</a></li>
       <li><a href="/ai-tools/">AI Tools</a></li>
@@ -30,7 +31,6 @@
     </ul>
   </nav>
 </header>
-
 <script>
   var toggle = document.getElementById('mobileToggle');
   var nav = document.getElementById('mobileNavLinks');
