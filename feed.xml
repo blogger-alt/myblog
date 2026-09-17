@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>The Startup Blog</title>
+  <link>https://boldblog.in</link>
+  <description>Startups, AI tools, and tech news for founders and builders.</description>
+  <language>en</language>
+
+  <item>
+    <title>Startup Runway: How to Calculate and Extend It</title>
+    <link>https://boldblog.in/startups/startup-runway-calculation-guide.html</link>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>How to calculate startup runway correctly and practical ways to extend it before your next fundraise.</description>
+  </item>
+  <item>
+    <title>SAFE vs Convertible Note</title>
+    <link>https://boldblog.in/startups/safe-vs-convertible-note.html</link>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
+    <description>How each instrument works and which is more common for early-stage fundraising in 2026.</description>
+  </item>
+  <!-- Add remaining posts, newest first -->
+
+</channel>
+</rss>
