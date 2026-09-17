@@ -2,7 +2,7 @@
 Name: The Startup Blog Team
 Site: https://boldblog.in
 Related: https://startuponx.com
-Contact: hello@boldblog.in
+Contact: cinechillz01@gmail.com
 
 /* THANKS */
 Cloudflare Pages

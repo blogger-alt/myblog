@@ -1,24 +1,43 @@
-# BoldBlog — Magazine Editorial Theme
-## 📁 Folder Structure
+## 📁 Complete Folder Structure
 ```
 boldblog/
+│
+│  ── FILES I CREATED FOR YOU (copy these into your repo) ──
+│
 ├── css/
-│   └── style.css              ← Main stylesheet (magazine editorial theme)
+│   └── style.css              ← ⭐ COMPLETE NEW STYLESHEET
 ├── js/
-│   └── include.js             ← Header/footer partials + scroll reveal animations
+│   └── include.js             ← Updated: added scroll reveal logic
 ├── partials/
-│   ├── header.html            ← Shared nav (loaded via JS)
-│   └── footer.html            ← Shared footer + newsletter (loaded via JS)
-├── images/
-│   ├── logo.png               ← Your existing logo (28×28 or 32×32)
-│   ├── og-image.png           ← Open Graph social image
-│   ├── startup-cover.png      ← Startup category cover image
-│   ├── ai-tools-cover.png     ← AI Tools category cover image
-│   ├── ai-tools-cover-2.png   ← AI Tools alt cover image
-│   └── tech-news-cover.png    ← Tech News category cover image
+│   ├── header.html            ← New nav (uppercase, serif logo, thin rule)
+│   └── footer.html            ← New footer (masthead grid + newsletter)
+│
+├── index.html                 ← ⭐ New homepage
+├── about.html                 ← New about page
+├── privacy.html               ← ⭐ NEW: Privacy Policy
+├── terms.html                 ← ⭐ NEW: Terms of Service
+├── 404.html                   ← New 404 page
+├── sitemap.xml                ← Updated: includes privacy, terms, category pages
+│
 ├── startups/
-│   ├── index.html             ← Startup category page
-│   ├── how-to-validate-startup-idea.html
+│   └── index.html             ← ⭐ NEW: Startups category page
+├── ai-tools/
+│   └── index.html             ← ⭐ NEW: AI Tools category page
+├── tech-news/
+│   └── index.html             ← ⭐ NEW: Tech News category page
+│
+│  ── FILES YOU ALREADY HAVE (keep as-is, they auto-style with new CSS) ──
+│
+├── images/
+│   ├── logo.png               ← Your existing logo
+│   ├── og-image.png           ← Open Graph social image
+│   ├── startup-cover.png      ← Startup category cover
+│   ├── ai-tools-cover.png     ← AI Tools cover
+│   ├── ai-tools-cover-2.png   ← AI Tools alt cover
+│   └── tech-news-cover.png    ← Tech News cover
+│
+├── startups/
+│   ├── how-to-validate-startup-idea.html     ← Auto-styles with new CSS
 │   ├── why-startup-directories-matter-2026.html
 │   ├── how-to-write-startup-pitch-deck.html
 │   ├── startup-equity-splitting-guide.html
@@ -29,31 +48,49 @@ boldblog/
 │   ├── safe-vs-convertible-note.html
 │   └── startup-runway-calculation-guide.html
 ├── ai-tools/
-│   ├── index.html             ← AI Tools category page
 │   ├── best-ai-tools-for-startups-2026.html
 │   ├── ai-coding-assistants-compared-2026.html
 │   ├── best-ai-agents-for-startups-2026.html
 │   └── chatgpt-vs-claude-vs-gemini-founders.html
 ├── tech-news/
-│   ├── index.html             ← Tech News category page
 │   ├── ai-startup-funding-2026.html
 │   ├── startup-accelerators-compared-2026.html
 │   └── remote-vs-in-person-startups-2026.html
-├── index.html                 ← Homepage
-├── about.html                 ← About page
-├── 404.html                   ← 404 page
+│
 ├── favicon.ico
 ├── favicon-16x16.png
 ├── favicon-32x32.png
 ├── apple-touch-icon.png
 ├── site.webmanifest
 ├── robots.txt
-├── sitemap.xml
 ├── rss.xml
 ├── llms.txt
 ├── humans.txt
 └── wrangler.toml              ← Cloudflare Pages config
 ```
+## ✅ What's New (files you didn't have before)
+| File | Purpose |
+|------|---------|
+| `privacy.html` | Full privacy policy — analytics, cookies, mailing list, data retention, your rights, GDPR-friendly |
+| `terms.html` | Full terms of service — content ownership, disclaimers, AI review policy, liability limits |
+| `startups/index.html` | Category listing page — all 10 startup articles with stagger animation |
+| `ai-tools/index.html` | Category listing page — all 4 AI tool articles |
+| `tech-news/index.html` | Category listing page — all 3 tech news articles |
+## ⚠️ What You Still Need To Do
+1. **Update each blog post's header** — Add a `.post-back` link before the `.post-tag`:
+   ```html
+   <a href="/startups/" class="post-back">← Startups</a>
+   ```
+   This gives readers a way back to the category page.
+2. **Verify your blog posts look right** — The new CSS auto-styles all `.post-content` elements. Check that:
+   - `h2` headings are now serif italic (this is intentional)
+   - Blockquotes have a brown left border (not blue)
+   - Links are brown `#8b5e3c` (not blue)
+   - Table styles still work (border changed to `var(--rule)`)
+3. **Update sitemap.xml** — I've included an updated version with the new pages. Replace your existing one.
+4. **Update humans.txt** — Add the new pages to the inventory if you track them.
+5. **Test on Cloudflare Pages** — Push all files and verify everything renders. The partials load via `fetch()` so they need to be on the same domain.
+
 ## 🎨 Design System — What Changed
 ### Before → After
 | Element | Old (Intercom-style) | New (Magazine Editorial) |
